@@ -8,7 +8,7 @@ const CallToAction = () => {
           <div className="-mx-4 flex flex-wrap items-stretch">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[570px] text-center">
-                <h2 className="mb-2.5 text-3xl font-bold text-white md:text-[38px] md:leading-[1.44]">
+                <h2 className="mb-2.5 text-3xl font-normal text-white md:text-[38px] md:leading-[1.44]">
                   <span>What Are You Looking For?</span>
                   <span className="text-3xl font-normal md:text-[40px]">
                     {" "}

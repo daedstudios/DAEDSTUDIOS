@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-const colors = require('tailwindcss/colors')
+const colors = require("tailwindcss/colors");
 
 const config: Config = {
   darkMode: "class",
@@ -10,9 +10,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--custom)"],
+      },
       colors: {
         ...colors,
-        // primary: "#1A202C",
+        primary: "#000000",
+        hover: "#FF6200",
       },
     },
   },

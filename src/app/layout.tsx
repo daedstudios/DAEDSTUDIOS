@@ -10,12 +10,28 @@ import "../styles/prism-vsc-dark-plus.css";
 import ToasterContext from "./api/contex/ToasetContex";
 import { useEffect, useState } from "react";
 import PreLoader from "@/components/Common/PreLoader";
+import localFont from "next/font/local";
+
+const customFont = localFont({
+    src: [
+      {
+        path: "/Anton-Regular.ttf",
+        weight: "normal",
+        style: "normal",
+      },
+    ],
+    variable: "--custom",
+  });
+
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  
+  // Font files can be colocated inside of `app`
+  
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
@@ -23,14 +39,14 @@ export default function RootLayout({
   }, []);
 
   return (
-    <html suppressHydrationWarning={true} className="!scroll-smooth" lang="en">
+    <html suppressHydrationWarning={true} className={ `${customFont.variable}` } lang="en">
       {/*
         <head /> will contain the components returned by the nearest parent
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
 
-      <body>
+      <body className="font">
         {loading ? (
           <PreLoader />
         ) : (
