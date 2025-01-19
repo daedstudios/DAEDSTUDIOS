@@ -20,7 +20,7 @@ const Footer = () => {
                   className="max-w-full"
                 />
               </Link>
-              <p className="mb-8 max-w-[270px] text-base text-gray-7">
+              <p className="mb-8 max-w-[270px] font-mono text-base text-gray-7">
                 We create digital experiences for brands and companies by using
                 technology.
               </p>

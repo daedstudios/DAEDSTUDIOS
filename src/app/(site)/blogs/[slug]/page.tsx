@@ -182,7 +182,7 @@ export default async function Post({ params }: Props) {
                     <div className="-mx-4 mb-8 flex flex-wrap">
                       <div className="w-full px-4">
                         <h2
-                          className="wow fadeInUp relative pb-5 text-2xl font-semibold text-dark dark:text-white sm:text-[28px]"
+                          className="wow fadeInUp relative pb-5 text-2xl font-normal text-dark dark:text-white sm:text-[28px]"
                           data-wow-delay=".1s"
                         >
                           Popular Articles
@@ -222,7 +222,7 @@ export default async function Post({ params }: Props) {
               className="wow fadeInUp mt-14 w-full px-4"
               data-wow-delay=".2s"
             >
-              <h2 className="relative pb-5 text-2xl font-semibold text-dark dark:text-white sm:text-[28px]">
+              <h2 className="relative pb-5 text-2xl font-normal text-dark dark:text-white sm:text-[28px]">
                 Related Articles
               </h2>
               <span className="mb-10 inline-block h-[2px] w-20 bg-primary"></span>

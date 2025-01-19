@@ -18,11 +18,22 @@ const customFont = localFont({
         path: "/Anton-Regular.ttf",
         weight: "normal",
         style: "normal",
-      },
+    },
     ],
-    variable: "--custom",
+  variable: "--custom",   
   });
 
+const customFont2 = localFont({
+  src: [
+  
+    {
+      path: "/Roboto-Italic-VariableFont_wdth,wght.ttf",
+      weight: "normal",
+      style: "normal",
+    },    
+  ],
+  variable: "--custom-two", 
+});
 
 export default function RootLayout({
   children,
@@ -39,14 +50,14 @@ export default function RootLayout({
   }, []);
 
   return (
-    <html suppressHydrationWarning={true} className={ `${customFont.variable}` } lang="en">
+    <html suppressHydrationWarning={true} className={`${customFont.variable} ${customFont2.variable} font-sans`} lang="en">
       {/*
         <head /> will contain the components returned by the nearest parent
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
 
-      <body className="font">
+      <body >
         {loading ? (
           <PreLoader />
         ) : (

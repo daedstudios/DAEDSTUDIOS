@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-gray-1 pb-8 pt-20 dark:bg-dark-2 lg:pb-[70px] lg:pt-[120px]"
+      className="bg-gray-1 pb-8 pt-20 dark:bg-black lg:pb-[70px] lg:pt-[120px]"
     >
       <div className="container">
         <div className="wow fadeInUp" data-wow-delay=".2s">
@@ -12,7 +12,7 @@ const About = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="mb-12 max-w-[540px] lg:mb-0">
                 <h2 className="mb-5 text-3xl font-normal leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]">
-                  Brilliant Toolkit to Build Next.js SaaS Websites.
+                  CONTROL AND POWER THROUGH DASHBOARDS
                 </h2>
                 <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
                   The main thrust is to focus on educating attendees on how to
@@ -27,9 +27,9 @@ const About = () => {
 
                 <a
                   href="/#"
-                  className="inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white duration-300 hover:bg-primary/90"
+                  className="inline-flex items-center justify-center rounded-[50px] bg-hover px-7 py-[9px] text-center text-base font-medium text-white duration-300 hover:bg-primary/90"
                 >
-                  Know More
+                  learn more
                 </a>
               </div>
             </div>
@@ -64,7 +64,7 @@ const About = () => {
                       <span className="block text-5xl font-extrabold text-white">
                         09
                       </span>
-                      <span className="block text-base font-semibold text-white">
+                      <span className="block text-base font-normal text-white">
                         We have
                       </span>
                       <span className="block text-base font-medium text-white text-opacity-70">

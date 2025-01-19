@@ -4,14 +4,14 @@ import featuresData from "./featuresData";
 
 const Features = () => {
   return (
-    <section className="pb-8 pt-20 bg-primary lg:pb-[70px] lg:pt-[120px]">
+    <section className="pb-20 pt-4 bg-primary lg:pb-[120px] lg:pt-[120px]">
       <div className="container">
         <SectionTitle
-          title="Main Features Of Play"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="CRAFTING DIGITAL EXPERIENCE."
+          paragraph=""
         />
 
-        <div className="-mx-4 mt-12 flex flex-wrap lg:mt-20">
+        <div className="-mx-4 mt-12 flex flex-wrap lg:mt-4 items-center">
           {featuresData.map((feature, i) => (
             <SingleFeature key={i} feature={feature} />
           ))}

@@ -16,7 +16,7 @@ const SingleFaq = (props: { question: string; answer: string }) => {
               </svg>
             </div>
             <div className="w-full">
-              <h3 className="mb-6 text-xl font-semibold text-dark dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+              <h3 className="mb-6 text-xl font-normal text-dark dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                 {question}
               </h3>
               <p className="text-base text-body-color dark:text-dark-6">

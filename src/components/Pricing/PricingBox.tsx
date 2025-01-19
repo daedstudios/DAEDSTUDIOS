@@ -35,7 +35,7 @@ const PricingBox = ({ product }: { product: Price }) => {
         <span className="mb-5 block text-xl font-medium text-dark dark:text-white">
           {product.nickname}
         </span>
-        <h2 className="mb-11 text-4xl font-semibold text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]">
+        <h2 className="mb-11 text-4xl font-normal text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]">
           <span className="text-xl font-medium">$ </span>
           <span className="-ml-1 -tracking-[2px]">
             {(product.unit_amount / 100).toLocaleString("en-US", {

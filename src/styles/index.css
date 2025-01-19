@@ -70,3 +70,7 @@
 .blog-details h3 {
   @apply text-dark mb-6 text-2xl font-normal dark:text-white sm:text-[28px] sm:leading-[40px];
 }
+
+.p{
+  @apply font-mono
+}

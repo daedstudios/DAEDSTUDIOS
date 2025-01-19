@@ -5,10 +5,10 @@ const HomeBlogSection = ({ posts }: any) => {
   return (
     <section className="bg-white pb-10 pt-20 dark:bg-black lg:pb-20 lg:pt-[120px]">
       <div className="container mx-auto">
-        <div className="mb-[60px]">
+        <div className="mb-[16px]">
           <SectionTitle
             paragraph = ""
-            title="Our Recent News"
+            title="OUR PROJECTS"
             width="640px"
             
           />

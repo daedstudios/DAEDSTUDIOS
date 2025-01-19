@@ -25,7 +25,7 @@ const Hero = () => {
                   <li>
                     <Link
                       href="https://nextjstemplates.com/templates/play"
-                      className="inline-flex items-center justify-center rounded-[50px] bg-hover px-7 py-[9px] text-center text-base font-medium text- shadow-1 transition duration-300 ease-in-out hover:bg-gray-2"
+                      className="inline-flex font-mono items-center justify-center rounded-[50px] bg-hover px-7 py-[9px] text-center text-base font-medium text- shadow-1 transition duration-300 ease-in-out hover:bg-gray-2"
                     >
                       Contact Us
                     </Link>
@@ -34,7 +34,7 @@ const Hero = () => {
                     <Link
                       href="https://github.com/nextjsTemplates/play-nextjs"
                       target="_blank"
-                      className="flex items-center gap-4 rounded-md bg-black/[0.12] px-6 py-[7px] text-base font-medium text-white transition duration-300 ease-in-out hover:bg-white hover:text-dark"
+                      className="flex items-center font-mono gap-4 rounded-md bg-black/[0.12] px-6 py-[7px] text-base font-medium text-white transition duration-300 ease-in-out hover:bg-white hover:text-dark"
                     >
                       <svg
                         className="fill-current"

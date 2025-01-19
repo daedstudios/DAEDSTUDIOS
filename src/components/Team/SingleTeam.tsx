@@ -238,7 +238,7 @@ const SingleTeam = ({ team }: { team: TeamType }) => {
           </span>
         </div>
         <div className="text-center">
-          <h3 className="mb-1 text-lg font-semibold text-dark dark:text-white">
+          <h3 className="mb-1 text-lg font-normal text-dark dark:text-white">
             {name}
           </h3>
           <p className="mb-5 text-sm text-body-color dark:text-dark-6">
