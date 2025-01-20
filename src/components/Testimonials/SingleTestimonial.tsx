@@ -28,7 +28,7 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
           {ratingIcons}
         </div>
 
-        <p className="mb-6 text-base text-body-color dark:text-dark-6">
+        <p className="mb-6 text-base font-mono text-body-color dark:text-dark-6">
           “{content}
         </p>
 
@@ -38,10 +38,10 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
           </div>
 
           <div>
-            <h3 className="text-sm font-normal text-dark dark:text-white">
+            <h3 className="text-sm font-mono font-normal text-dark dark:text-white">
               {name}
             </h3>
-            <p className="text-body-secondary text-xs">{designation}</p>
+            <p className="text-body-secondary font-mono text-xs">{designation}</p>
           </div>
         </div>
       </div>

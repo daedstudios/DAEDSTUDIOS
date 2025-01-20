@@ -27,7 +27,7 @@ export default function Home() {
       <Hero />
       <HomeBlogSection posts={posts} />
       <Features />
-      <About />
+      {/* <About /> */}
       {/* <CallToAction /> */}
       {/* <Pricing /> */}
       <Testimonials />

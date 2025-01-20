@@ -6,16 +6,16 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative overflow-hidden bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]"
+        className="relative overflow-hidden dark:bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-left">
             <div className="w-full px-4">
               <div
-                className="hero-content wow fadeInUp max-w-[500px] text-left"
+                className="hero-content wow fadeInUp max-w-[700px] text-left"
                 data-wow-delay=".2s"
               >
-                <h1 className="mb-6 text-6xl leading-snug text-white sm:text-8xl sm:leading-snug lg:text-8xl lg:leading-[1.2]">
+                <h1 className="mb-6 text-6xl leading-snug dark:text-white sm:text-8xl sm:leading-snug lg:text-9xl lg:leading-[1.2]">
                   WELCOME TO AE STUDIOS
                 </h1>
                 <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]">
@@ -25,7 +25,7 @@ const Hero = () => {
                   <li>
                     <Link
                       href="https://nextjstemplates.com/templates/play"
-                      className="inline-flex font-mono items-center justify-center rounded-[50px] bg-hover px-7 py-[9px] text-center text-base font-medium text- shadow-1 transition duration-300 ease-in-out hover:bg-gray-2"
+                      className="inline-flex font-mono items-center justify-center rounded-[50px] bg-hover px-7 py-[9px] text-center text-white text-base font-medium text- shadow-1 transition duration-300 ease-in-out hover:bg-gray-2"
                     >
                       Contact Us
                     </Link>
@@ -34,7 +34,7 @@ const Hero = () => {
                     <Link
                       href="https://github.com/nextjsTemplates/play-nextjs"
                       target="_blank"
-                      className="flex items-center font-mono gap-4 rounded-md bg-black/[0.12] px-6 py-[7px] text-base font-medium text-white transition duration-300 ease-in-out hover:bg-white hover:text-dark"
+                      className="flex items-center font-mono gap-4 rounded-md px-6 py-[7px] text-base font-medium text- transition duration-300 ease-in-out hover:bg-white hover:text-dark-6"
                     >
                       <svg
                         className="fill-current"

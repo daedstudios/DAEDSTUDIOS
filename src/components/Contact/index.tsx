@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <section id="contact" className="relative py-20 md:py-[120px]">
       <div className="absolute left-0 top-0 -z-[1] h-full w-full dark:bg-black"></div>
-      <div className="absolute left-0 top-0 -z-[1] h-1/2 w-full bg-[#E9F9FF] dark:bg-black lg:h-[45%] xl:h-1/2"></div>
+      <div className="absolute left-0 top-0 -z-[1] h-1/2 w-full bg-white dark:bg-black lg:h-[45%] xl:h-1/2"></div>
       <div className="container px-4">
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
@@ -72,7 +72,7 @@ const Contact = () => {
                 <div className="mb-[22px]">
                   <label
                     htmlFor="fullName"
-                    className="mb-4 block text-sm text-body-color dark:text-dark-6"
+                    className="mb-4 block text-sm text-body-color dark:text-hover"
                   >
                     Full Name*
                   </label>
@@ -86,7 +86,7 @@ const Contact = () => {
                 <div className="mb-[22px]">
                   <label
                     htmlFor="email"
-                    className="mb-4 block text-sm text-body-color dark:text-dark-6"
+                    className="mb-4 block text-sm text-body-color dark:text-hover"
                   >
                     Email*
                   </label>
@@ -100,7 +100,7 @@ const Contact = () => {
                 <div className="mb-[22px]">
                   <label
                     htmlFor="phone"
-                    className="mb-4 block text-sm text-body-color dark:text-dark-6"
+                    className="mb-4 block text-sm text-body-color dark:text-hover"
                   >
                     Phone*
                   </label>
@@ -114,7 +114,7 @@ const Contact = () => {
                 <div className="mb-[30px]">
                   <label
                     htmlFor="message"
-                    className="mb-4 block text-sm text-body-color dark:text-dark-6"
+                    className="mb-4 block text-sm text-body-color dark:text-hover"
                   >
                     Message*
                   </label>

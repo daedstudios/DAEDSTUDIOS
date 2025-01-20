@@ -34,15 +34,18 @@ const testimonialData: Testimonial[] = [
 
 const Testimonials = () => {
   return (
-    <section className="bg-gray-1 py-20 dark:bg-black md:py-[120px]">
+    <section className="bg-white py-20 dark:bg-black md:py-[120px]">
       <div className="container px-4">
-        <SectionTitle
+         <h1 className="text-9xl animate-slideRightToLeft whitespace-nowrap pb-16">
+          WHAT PEOPLE SAY ABOUT US
+        </h1>
+        {/* <SectionTitle
           subtitle=""
           title="WHAT PEOPLE SAY ABOUT US"
           paragraph=""
           width="640px"
           center
-        />
+        /> */}
 
         <div className="mt-[60px] flex flex-wrap lg:mt-20 gap-y-8">
           {testimonialData.map((testimonial, i) => (

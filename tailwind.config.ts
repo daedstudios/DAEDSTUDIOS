@@ -19,6 +19,22 @@ const config: Config = {
         primary: "#000000",
         hover: "#FF6200",
       },
+
+      keyframes: {
+        moveFromLeftToRight: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
+        moveFromRightToLeft: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
+
+      animation: {
+        slideLeftToRight: "moveFromLeftToRight 9s linear infinite",
+        slideRightToLeft: "moveFromRightToLeft 9s linear infinite",
+      },
     },
   },
   plugins: [require("tailgrids/plugin")],
