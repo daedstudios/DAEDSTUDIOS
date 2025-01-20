@@ -13,26 +13,25 @@ import PreLoader from "@/components/Common/PreLoader";
 import localFont from "next/font/local";
 
 const customFont = localFont({
-    src: [
-      {
-        path: "/Anton-Regular.ttf",
-        weight: "normal",
-        style: "normal",
+  src: [
+    {
+      path: "/Anton-Regular.ttf",
+      weight: "normal",
+      style: "normal",
     },
-    ],
-  variable: "--custom",   
-  });
+  ],
+  variable: "--custom",
+});
 
 const customFont2 = localFont({
   src: [
-  
     {
       path: "/Roboto-VariableFont_wdth,wght.ttf",
       weight: "normal",
       style: "normal",
-    },    
+    },
   ],
-  variable: "--custom-two", 
+  variable: "--custom-two",
 });
 
 export default function RootLayout({
@@ -40,9 +39,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  
   // Font files can be colocated inside of `app`
-  
+
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
@@ -50,14 +48,18 @@ export default function RootLayout({
   }, []);
 
   return (
-    <html suppressHydrationWarning={true} className={`${customFont.variable} ${customFont2.variable} font-sans`} lang="en">
+    <html
+      suppressHydrationWarning={true}
+      className={`${customFont.variable} ${customFont2.variable} font-sans`}
+      lang="en"
+    >
       {/*
         <head /> will contain the components returned by the nearest parent
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
 
-      <body className="max-w-screen overflow-x-hidden">
+      <body className="max-w-screen overflow-x-hidden bg-white dark:bg-black">
         {loading ? (
           <PreLoader />
         ) : (

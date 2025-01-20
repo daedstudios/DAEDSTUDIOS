@@ -12,7 +12,7 @@ const SectionTitle = ({
   center?: boolean;
 }) => {
   return (
-    <div className="-mx-4 flex flex-wrap">
+    <div className="flex flex-wrap">
       <div
         className={`wow fadeInUp w-full px-4 ${
           center ? "mx-auto text-center" : ""
@@ -21,7 +21,7 @@ const SectionTitle = ({
         style={{ maxWidth: width }}
       >
         {subtitle && (
-          <span className="mb-2 block text-lg font-semibold text-primary">
+          <span className="text-16px mb-2 block font-mono dark:text-white">
             {subtitle}
           </span>
         )}

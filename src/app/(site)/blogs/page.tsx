@@ -17,7 +17,7 @@ const Blog = () => {
       <Breadcrumb pageName="Blog Grids" />
 
       <section className="pb-10 pt-20 lg:pb-20 lg:pt-[120px]">
-        <div className="container">
+        <div className="">
           <div className="-mx-4 flex flex-wrap justify-center">
             {posts.map((blog, i) => (
               <div key={i} className="w-full px-4 md:w-2/3 lg:w-1/2 xl:w-1/3">
