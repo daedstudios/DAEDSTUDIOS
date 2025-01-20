@@ -6,26 +6,25 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative overflow-hidden dark:bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]"
+        className="border-y-[0.25px] dark:border-white elative overflow-hidden dark:bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-left">
             <div className="w-full px-4">
-              <div
-                className="hero-content wow fadeInUp max-w-[700px] text-left"
-                data-wow-delay=".2s"
-              >
-                <h1 className="mb-6 text-6xl leading-snug dark:text-white sm:text-8xl sm:leading-snug lg:text-9xl lg:leading-[1.2]">
+             
+                <div className="flex flex-wrap row-auto items-end">
+                <h1 className=" mb-6 text-6xl max-w-[700px] leading-snug dark:text-white sm:text-8xl sm:leading-snug lg:text-9xl lg:leading-[1.2]">
                   WELCOME TO AE STUDIOS
                 </h1>
-                <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]">
-                  
-                </p>
+                <p className="font-mono mb-9 max-w-[240px] text-base font-medium text-white sm:text-lg sm:text-left sm:leading-[1.44]">
+                the place where creativity meets cutting edge tech.
+                  </p>
+                </div>
                 <ul className="mb-10 flex flex-wrap items-left justify-left gap-5">
                   <li>
                     <Link
                       href="https://nextjstemplates.com/templates/play"
-                      className="inline-flex font-mono items-center justify-center rounded-[50px] bg-hover px-7 py-[9px] text-center text-white text-base font-medium text- shadow-1 transition duration-300 ease-in-out hover:bg-gray-2"
+                      className="border-[2px] border-hover inline-flex font-mono items-center justify-center  bg-transparent px-4 py-[4px] text-center rounded-[50px] text-orange text-base font-medium text- transition duration-300 ease-in-out hover:bg-hover hover:text-white"
                     >
                       Contact Us
                     </Link>
@@ -34,7 +33,7 @@ const Hero = () => {
                     <Link
                       href="https://github.com/nextjsTemplates/play-nextjs"
                       target="_blank"
-                      className="flex items-center font-mono gap-4 rounded-md px-6 py-[7px] text-base font-medium text- transition duration-300 ease-in-out hover:bg-white hover:text-dark-6"
+                      className="flex items-center font-mono gap-4 rounded-[50px] px-4 py-[4px] text-base font-medium text- transition duration-300 ease-in-out hover:border-[2px] hover:border-white border-black"
                     >
                       <svg
                         className="fill-current"
@@ -1353,7 +1352,7 @@ const Hero = () => {
               {/* </div>
             </div> */}
           {/* </div> */}
-        </div>
+    
       </section>
     </>
   );

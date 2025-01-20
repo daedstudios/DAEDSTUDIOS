@@ -63,7 +63,7 @@ const Contact = () => {
           </div>
           <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
             <div
-              className="wow fadeInUp rounded-lg bg-white px-8 py-10 shadow-testimonial dark:bg-black dark:shadow-none sm:px-10 sm:py-12 md:p-[60px] lg:p-10 lg:px-10 lg:py-12 2xl:p-[60px]"
+              className="wow fadeInUp rounded-lg bg-white px-8 py-10  dark:bg-black dark:shadow-none sm:px-10 sm:py-12 md:p-[60px] lg:p-10 lg:px-10 lg:py-12 2xl:p-[60px]"
               data-wow-delay=".2s
               "
             >
@@ -72,7 +72,7 @@ const Contact = () => {
                 <div className="mb-[22px]">
                   <label
                     htmlFor="fullName"
-                    className="mb-4 block text-sm text-body-color dark:text-hover"
+                    className="mb-4 block text-sm text-black dark:text-white"
                   >
                     Full Name*
                   </label>
@@ -86,7 +86,7 @@ const Contact = () => {
                 <div className="mb-[22px]">
                   <label
                     htmlFor="email"
-                    className="mb-4 block text-sm text-body-color dark:text-hover"
+                    className="mb-4 block text-sm text-black dark:text-white"
                   >
                     Email*
                   </label>
@@ -100,7 +100,7 @@ const Contact = () => {
                 <div className="mb-[22px]">
                   <label
                     htmlFor="phone"
-                    className="mb-4 block text-sm text-body-color dark:text-hover"
+                    className="mb-4 block text-sm text-black dark:text-white"
                   >
                     Phone*
                   </label>
@@ -114,7 +114,7 @@ const Contact = () => {
                 <div className="mb-[30px]">
                   <label
                     htmlFor="message"
-                    className="mb-4 block text-sm text-body-color dark:text-hover"
+                    className="mb-4 block text-sm text-black dark:text-white"
                   >
                     Message*
                   </label>
@@ -128,7 +128,7 @@ const Contact = () => {
                 <div className="mb-0">
                   <button
                     type="submit"
-                    className="inline-flex font-mono items-center justify-center rounded-[50px] bg-hover px-7 py-[9px] text-base font-medium text-white transition duration-300 ease-in-out hover:bg-primary/90"
+                    className="inline-flex font-mono items-center justify-center border-[2px] rounded-[50px] border-hover px-4 py-[4px] text-base font-medium text-hover transition duration-300 ease-in-out hover:bg-hover hover:text-white"
                   >
                     Send
                   </button>

@@ -13,7 +13,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
         <h3 className="mb-3 text-xl font-normal text-black dark:text-white">
           {title}
         </h3>
-        <p className="mb-8 font-mono text-body-color dark:text-dark-6 lg:mb-11">
+        <p className="mb-8 font-mono text-dark-4 dark:text-dark-6 lg:mb-11">
           {paragraph}
         </p>
         <Link

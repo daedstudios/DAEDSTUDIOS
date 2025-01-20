@@ -27,7 +27,7 @@ const customFont2 = localFont({
   src: [
   
     {
-      path: "/Roboto-Italic-VariableFont_wdth,wght.ttf",
+      path: "/Roboto-VariableFont_wdth,wght.ttf",
       weight: "normal",
       style: "normal",
     },    

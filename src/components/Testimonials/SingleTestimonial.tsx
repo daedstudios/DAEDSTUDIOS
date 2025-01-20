@@ -12,7 +12,7 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
   let ratingIcons = [];
   for (let index = 0; index < star; index++) {
     ratingIcons.push(
-      <span key={index} className="text-hover">
+      <span key={index} className="text-white">
         {starIcon}
       </span>,
     );
@@ -21,14 +21,14 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
   return (
     <div className="w-full px-4 md:w-1/2 lg:w-1/3">
       <div
-        className="rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-black sm:px-[30px]"
+        className="rounded-xl bg-white px-4 py-[30px] dark:bg-black sm:px-[30px]"
         data-wow-delay=".1s"
       >
         <div className="mb-[18px] flex items-center gap-[2px]">
           {ratingIcons}
         </div>
 
-        <p className="mb-6 text-base font-mono text-body-color dark:text-dark-6">
+        <p className="mb-6 text-base font-mono text-dark-4 dark:text-dark-6">
           “{content}
         </p>
 

@@ -18,7 +18,7 @@ const featuresData: Feature[] = [
       </svg>
     ),
     title: "Free and Open-Source",
-    paragraph: "Lorem Ipsum is simply dummy text of the printing and industry.",
+    paragraph: "Lorem Ipsum is simply dummy text of the printing and industry. ",
     btn: "Learn More",
     btnLink: "/#",
   },
