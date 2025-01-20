@@ -4,20 +4,12 @@ import featuresData from "./featuresData";
 
 const Features = () => {
   return (
-    <section className="py-[3rem] dark:bg-primary lg:py-[4rem]">
+    <section className="py-[3rem] dark:bg-primary lg:py-[8rem]">
+      <h1 className="animate-slideLeftToRight whitespace-nowrap pb-16 text-9xl">
+        CRAFTING DIGITAL EXPERIENCE.
+      </h1>
       <div className="container overflow-hidden">
-        <h1 className="text-9xl animate-slideLeftToRight whitespace-nowrap pb-16">
-          CRAFTING DIGITAL EXPERIENCE.
-        </h1>
-        {/* <h1 className="text-9xl animate-slideRightToLeft whitespace-nowrap">
-          CRAFTING DIGITAL EXPERIENCE.
-        </h1> */}
-        {/* <SectionTitle
-          title="CRAFTING DIGITAL EXPERIENCE."
-          paragraph=""
-        /> */}
-
-        <div className="-mx-4 mt-12 flex flex-wrap lg:mt-4 items-center">
+        <div className="-mx-4 mt-12 flex flex-wrap items-center lg:mt-4">
           {featuresData.map((feature, i) => (
             <SingleFeature key={i} feature={feature} />
           ))}
