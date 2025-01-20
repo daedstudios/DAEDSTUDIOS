@@ -12,7 +12,7 @@ const Hero = () => {
           <div className="items-left -mx-4 flex flex-wrap">
             <div className="w-full px-4">
 <div className="flex flex-wrap row-auto items-end">
-                <h1 className=" mb-6 max-w-[700px] leading-snug dark:text-white sm:text-8xl sm:leading-snug lg:text-9xl lg:leading-[1.2]">
+                <h1 className=" mb-6 max-w-[700px] leading-snug dark:text-white text-8xl sm:leading-snug lg:text-9xl lg:leading-[1.2]">
                   WELCOME TO AE STUDIOS
                 </h1>
                 <p className="mb-9 max-w-[240px] font-mono text-base font-medium text-white sm:text-left sm:text-lg sm:leading-[1.44]">
