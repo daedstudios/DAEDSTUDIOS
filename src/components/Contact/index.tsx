@@ -60,7 +60,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="border-dark-5px-4 w-full border-l-[0.5px]  lg:w-5/12 xl:w-4/12">
+          <div className="w-full translate-x-2 border-l-[0.5px]  border-dark-5  px-4 lg:w-5/12 xl:w-4/12">
             <div
               className="wow fadeInUp rounded-lg bg-white px-8 py-10  dark:bg-black dark:shadow-none sm:px-10 sm:py-12 md:p-[60px] lg:p-10 lg:px-10 lg:py-12 2xl:p-[60px]"
               data-wow-delay=".2s
@@ -126,7 +126,7 @@ const Contact = () => {
                 <div className="mb-0">
                   <button
                     type="submit"
-                    className="border-hover text-hover hover:bg-hover inline-flex items-center justify-center rounded-[50px] border-[2px] px-4 py-[4px] font-mono text-base font-medium transition duration-300 ease-in-out hover:text-white"
+                    className="inline-flex items-center justify-center rounded-[50px] border-[2px] border-hover px-4 py-[4px] font-mono text-base font-medium text-hover transition duration-300 ease-in-out hover:bg-hover hover:text-white"
                   >
                     Send
                   </button>

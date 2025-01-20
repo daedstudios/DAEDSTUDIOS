@@ -25,12 +25,12 @@ const MyFancyButton = ({ mainContent, slideUpContent }: MyFancyButtonProps) => {
 
   useGSAP(() => {
     tl.to(maindivRef.current, {
-      y: "-3rem",
+      y: "-100%",
     });
     tl.to(
       seconddivRef.current,
       {
-        y: "-3rem",
+        y: "-100%",
       },
       "<",
     );
@@ -38,7 +38,7 @@ const MyFancyButton = ({ mainContent, slideUpContent }: MyFancyButtonProps) => {
 
   return (
     <div
-      className="h-12 w-56 overflow-hidden font-mono hover:cursor-pointer"
+      className="h-full w-56 overflow-hidden font-mono hover:cursor-pointer"
       onMouseEnter={() => {
         tl.play();
       }}
@@ -59,7 +59,7 @@ const MyFancyButton = ({ mainContent, slideUpContent }: MyFancyButtonProps) => {
         {mainContent}
       </div>
       <div
-        className="top-20 flex h-full w-full items-center justify-center bg-white text-black hover:cursor-pointer"
+        className="top-[100%] flex h-full w-full items-center justify-center bg-white text-black hover:cursor-pointer"
         ref={seconddivRef}
       >
         {slideUpContent}
