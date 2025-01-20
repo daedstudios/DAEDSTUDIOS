@@ -43,7 +43,7 @@ const Footer = () => {
 
   return (
     <>
-      <header className="w-full border-y border-y-hover/20 bg-white pb-20 dark:bg-black">
+      <header className="w-full bg-white pb-20 dark:bg-black">
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
             <div className="w-60 max-w-full px-4">

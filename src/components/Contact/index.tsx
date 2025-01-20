@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section id="contact" className="relative py-20 md:py-[4rem]">
+    <section id="contact" className="relative py-[4rem] lg:py-[4rem]">
       <div className="absolute left-0 top-0 -z-[1] h-full w-full dark:bg-black"></div>
       <div className="absolute left-0 top-0 -z-[1] h-1/2 w-full bg-white dark:bg-black lg:h-[45%] xl:h-1/2"></div>
       <div className="container px-4">
@@ -15,7 +15,7 @@ const Contact = () => {
               </div>
               <div className="mb-12 flex flex-wrap justify-between lg:mb-0">
                 <div className="mb-8 flex w-[330px] max-w-full">
-                  <div className="mr-6 text-[32px] text-hover">
+                  <div className="mr-6 text-[32px] text-white">
                     <svg
                       width="29"
                       height="35"
@@ -36,7 +36,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="mb-8 flex w-[330px] max-w-full">
-                  <div className="mr-6 text-[32px] text-hover">
+                  <div className="mr-6 text-[32px] text-white">
                     <svg
                       width="34"
                       height="25"
