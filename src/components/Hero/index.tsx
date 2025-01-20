@@ -6,14 +6,14 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="border-y-[0.25px] dark:border-white elative overflow-hidden dark:bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]"
+        className=" dark:border-white elative overflow-hidden dark:bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px] "
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-left">
             <div className="w-full px-4">
              
                 <div className="flex flex-wrap row-auto items-end">
-                <h1 className=" mb-6 text-6xl max-w-[700px] leading-snug dark:text-white sm:text-8xl sm:leading-snug lg:text-9xl lg:leading-[1.2]">
+                <h1 className=" mb-6 max-w-[700px] leading-snug dark:text-white sm:text-8xl sm:leading-snug lg:text-9xl lg:leading-[1.2]">
                   WELCOME TO AE STUDIOS
                 </h1>
                 <p className="font-mono mb-9 max-w-[240px] text-base font-medium text-white sm:text-lg sm:text-left sm:leading-[1.44]">
