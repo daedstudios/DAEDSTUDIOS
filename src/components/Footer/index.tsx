@@ -44,7 +44,7 @@ const Footer = () => {
   return (
     <>
       <header className="w-full bg-white pb-20 dark:bg-black">
-        <div className="container">
+        <div className="">
           <div className="relative -mx-4 flex items-center justify-between">
             <div className="w-60 max-w-full px-4">
               <Link

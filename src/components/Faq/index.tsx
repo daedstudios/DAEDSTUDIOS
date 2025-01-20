@@ -4,7 +4,7 @@ import SingleFaq from "./SingleFaq";
 const Faq = () => {
   return (
     <section className="relative z-20 overflow-hidden bg-white pb-8 pt-20 dark:bg-dark lg:pb-[50px] lg:pt-[120px]">
-      <div className="container">
+      <div className="">
         <SectionTitle
           subtitle="FAQ"
           title="Any Questions? Answered"
