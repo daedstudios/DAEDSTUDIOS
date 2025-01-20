@@ -6,7 +6,7 @@ const About = () => {
       id="about"
       className="bg-white pb-8 pt-20 dark:bg-black lg:pb-[70px] lg:pt-[120px]"
     >
-      <div className="container">
+      <div className="">
         <div className="wow fadeInUp" data-wow-delay=".2s">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
