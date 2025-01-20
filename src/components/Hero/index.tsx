@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import MyFancyButton from "../MyFancyButton/MyFancyButton";
 
 const Hero = () => {
   return (
@@ -11,7 +12,7 @@ const Hero = () => {
         <div className="container">
           <div className="items-left -mx-4 flex flex-wrap">
             <div className="w-full px-4">
-<div className="flex flex-wrap row-auto items-end">
+              <div className="row-auto flex flex-wrap items-end">
                 <h1 className=" mb-6 max-w-[700px] leading-snug dark:text-white sm:text-8xl sm:leading-snug lg:text-9xl lg:leading-[1.2]">
                   WELCOME TO AE STUDIOS
                 </h1>
@@ -21,12 +22,16 @@ const Hero = () => {
               </div>
               <ul className="items-left justify-left mb-10 flex flex-wrap gap-5">
                 <li>
-                  <Link
+                  {/* <Link
                     href="https://nextjstemplates.com/templates/play"
                     className="text- inline-flex items-center justify-center rounded-[50px] border-[2px]  border-hover bg-transparent px-4 py-[4px] text-center font-mono text-base font-medium text-orange transition duration-300 ease-in-out hover:bg-hover hover:text-white"
                   >
                     Contact Us
-                  </Link>
+                  </Link> */}
+                  <MyFancyButton
+                    mainContent="contact us"
+                    slideUpContent="contact up bitches"
+                  />
                 </li>
                 <li>
                   <Link
