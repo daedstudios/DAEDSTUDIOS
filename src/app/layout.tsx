@@ -57,7 +57,7 @@ export default function RootLayout({
       */}
       <head />
 
-      <body >
+      <body className="max-w-screen overflow-x-hidden">
         {loading ? (
           <PreLoader />
         ) : (
