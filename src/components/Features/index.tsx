@@ -4,7 +4,7 @@ import featuresData from "./featuresData";
 
 const Features = () => {
   return (
-    <section className="pb-20 pt-4 dark:bg-primary lg:pb-[120px] lg:pt-[120px]">
+    <section className="py-[3rem] dark:bg-primary lg:py-[4rem]">
       <div className="container overflow-hidden">
         <h1 className="text-9xl animate-slideLeftToRight whitespace-nowrap pb-16">
           CRAFTING DIGITAL EXPERIENCE.
