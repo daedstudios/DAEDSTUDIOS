@@ -6,9 +6,9 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
   return (
     <div className="w-full px-4 md:w-1/2 lg:w-1/4">
       <div className="wow fadeInUp group mb-12" data-wow-delay=".15s">
-        <div className="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-black dark:bg-primary group-hover:rotate-90">
+        <div className="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-black group-hover:rotate-90 dark:bg-primary">
           {/* <span className="absolute left-0 top-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-black dark:bg-primary duration-300 group-hover:rotate-45"></span> */}
-          <span className = "group-hover:rotate-180">{icon} </span>
+          <span className="duration-100 group-hover:rotate-180">{icon} </span>
         </div>
         <h3 className="mb-3 text-xl font-normal text-black dark:text-white">
           {title}
@@ -18,7 +18,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
         </p>
         <Link
           href={btnLink}
-          className="text-base font-mono font-medium text-dark hover:text-primary dark:text-hover dark:hover:text-white"
+          className="font-mono text-base font-medium text-dark hover:text-primary dark:text-hover dark:hover:text-white"
         >
           {btn}
         </Link>

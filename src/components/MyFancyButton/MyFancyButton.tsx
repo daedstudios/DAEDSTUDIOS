@@ -38,7 +38,7 @@ const MyFancyButton = ({ mainContent, slideUpContent }: MyFancyButtonProps) => {
 
   return (
     <div
-      className="h-full w-56 overflow-hidden font-mono hover:cursor-pointer"
+      className="h-full w-56 overflow-hidden font-mono text-xl hover:cursor-pointer"
       onMouseEnter={() => {
         tl.play();
       }}

@@ -19,7 +19,7 @@ const Hero = () => {
                 the place where creativity meets cutting edge tech.
               </p>
             </div>
-            <ul className="items-left justify-left flex h-20 flex-wrap gap-5 border-b-[0.5px] border-dark-5 px-4">
+            <ul className="items-left justify-left flex h-[5rem] flex-wrap gap-5 border-b-[0.5px] border-dark-5 px-4">
               <li>
                 <MyFancyButton
                   mainContent="contact us"
