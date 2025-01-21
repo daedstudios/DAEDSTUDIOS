@@ -72,6 +72,8 @@ export default function RootLayout({
               <ToasterContext />
               <Header />
               {children}
+              <div className="fixed left-0 top-0 z-50 h-screen w-4 border-r-[0.5px] border-dark-5 bg-transparent" />
+              <div className="fixed right-0 top-0 z-50 h-screen w-4 border-l-[0.5px] border-dark-5 bg-transparent" />
               <Footer />
               <ScrollToTop />
             </ThemeProvider>
