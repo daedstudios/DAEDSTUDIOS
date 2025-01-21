@@ -34,7 +34,7 @@ const testimonialData: Testimonial[] = [
 
 const Testimonials = () => {
   return (
-    <section className="max-w-screen w-screen overflow-x-hidden border border-y-[5px]  border-black bg-white dark:bg-black">
+    <section className="max-w-screen w-screen overflow-x-hidden  bg-white dark:bg-black">
       <p className="mx-1 p-4 font-mono">.services</p>
       <h1 className="animate-slideLeftToRight w-full whitespace-nowrap text-6xl md:text-9xl lg:text-9xl">
         CRAFTING DIGITAL EXPERIENCE...!
