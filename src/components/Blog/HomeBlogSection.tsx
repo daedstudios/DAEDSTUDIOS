@@ -7,6 +7,7 @@ const HomeBlogSection = ({ posts }: any) => {
       <div className=" mx-auto">
         <div className="mt-4 border-b-[0.5px] border-dark-5">
           <SectionTitle
+            paragraph= ""
             subtitle=".work"
             title="OUR PROJECTS"
             width="640px"
