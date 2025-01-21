@@ -11,7 +11,7 @@ const Hero = () => {
       >
         <div className="items-left flex flex-wrap ">
           <div className="w-full">
-            <div className="row-auto flex flex-wrap items-end border-b-[0.5px] border-dark-5 px-4">
+            <div className="row-auto flex flex-wrap items-end border-b-[0.5px] border-dark-5 px-4 pb-10">
               <h1 className=" max-w-[700px] text-8xl leading-snug dark:text-white sm:leading-snug lg:text-9xl lg:leading-[1.2]">
                 WELCOME TO AE STUDIOS
               </h1>
@@ -19,14 +19,12 @@ const Hero = () => {
                 the place where creativity meets cutting edge tech.
               </p>
             </div>
-            <ul className="items-left justify-left flex flex-wrap gap-5 border-b-[0.5px] border-dark-5 px-4 py-8">
+            <ul className="items-left justify-left flex h-[5rem] flex-wrap gap-5 border-b-[0.5px] border-dark-5 px-4">
               <li>
-                <Link
-                  href="https://nextjstemplates.com/templates/play"
-                  className="text- border-hover hover:bg-hover inline-flex items-center justify-center  rounded-[50px] border-[2px] bg-transparent px-4 py-[4px] text-center font-mono text-base font-medium text-orange transition duration-300 ease-in-out hover:text-white"
-                >
-                  Contact Us
-                </Link>
+                <MyFancyButton
+                  mainContent="contact us"
+                  slideUpContent="contact us"
+                />
               </li>
               <li>
                 <Link
