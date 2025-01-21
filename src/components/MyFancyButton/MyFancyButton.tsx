@@ -38,7 +38,7 @@ const MyFancyButton = ({ mainContent, slideUpContent }: MyFancyButtonProps) => {
 
   return (
     <div
-      className="h-full w-56 overflow-hidden font-mono text-xl hover:cursor-pointer"
+      className="h-full w-auto overflow-hidden font-mono text-xl hover:cursor-pointer"
       onMouseEnter={() => {
         tl.play();
       }}
@@ -50,7 +50,7 @@ const MyFancyButton = ({ mainContent, slideUpContent }: MyFancyButtonProps) => {
       }}
     >
       <div
-        className="flex h-full w-full items-center justify-center border-x-[0.5px] border-dark-5 bg-black text-white"
+        className="flex h-full w-auto items-center justify-center border-x-[0.5px] border-dark-5 bg-black text-white"
         ref={maindivRef}
         onMouseLeave={(e) => {
           e.stopPropagation();

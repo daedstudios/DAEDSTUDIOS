@@ -20,13 +20,13 @@ const Hero = () => {
               </p>
             </div>
             <ul className="items-left justify-left flex h-[5rem] flex-wrap border-b-[0.5px] border-dark-5 px-4">
-              <li>
+              <li className="w-80">
                 <MyFancyButton
                   mainContent="contact us"
                   slideUpContent="contact us"
                 />
               </li>
-              <li>
+              <li className="w-80">
                 <MyFancyButton
                   mainContent="contact us"
                   slideUpContent="contact us"

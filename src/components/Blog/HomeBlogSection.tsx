@@ -5,7 +5,7 @@ const HomeBlogSection = ({ posts }: any) => {
   return (
     <section className="border-b-[0.5px]  border-dark-5  bg-white dark:bg-black">
       <div className=" mx-auto">
-        <div className="mx-1 mt-4 border-b-[0.5px] border-dark-5">
+        <div className="mx-1 mt-36 border-y-[0.5px] border-dark-5">
           <SectionTitle
             paragraph=""
             subtitle=".work"

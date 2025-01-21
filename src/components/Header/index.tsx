@@ -46,34 +46,29 @@ const Header = () => {
       <header
         className={`ud-header left-0 top-0 z-40 flex w-full items-center border-b-[0.5px] border-dark-5 ${
           sticky
-            ? "shadow-nav fixed z-[999] border-b border-stroke bg-white/80 backdrop-blur-[5px] dark:border-dark-3/20 dark:bg-dark/10"
+            ? "shadow-nav fixed z-[999] border-b border-stroke bg-white/80 backdrop-blur-[5px] dark:border-dark-3/20 dark:bg-black/85"
             : "absolute bg-transparent"
         }`}
       >
         <div className="container mx-0 w-full">
           <div className="relative mx-0 flex items-center justify-between">
             <div className="w-60 max-w-full px-0">
-              <Link
-                href="/"
-                className={`navbar-logo block w-full ${
-                  sticky ? "py-2" : "py-5"
-                } `}
-              >
+              <Link href="/" className={`navbar-logo block w-full scale-75`}>
                 {pathUrl !== "/" ? (
                   <>
                     <Image
-                      src={`/images/logo/logo.svg`}
+                      src={`/images/logo/logo-white.svg`}
                       alt="logo"
                       width={240}
                       height={30}
-                      className="header-logo w-full dark:hidden"
+                      className="w-full dark:hidden"
                     />
                     <Image
-                      src={`/images/logo/logo.svg`}
+                      src={`/images/logo/logo-white.svg`}
                       alt="logo"
                       width={240}
                       height={30}
-                      className="header-logo hidden w-full dark:block"
+                      className="hidden w-full dark:block"
                     />
                   </>
                 ) : (
@@ -81,20 +76,20 @@ const Header = () => {
                     <Image
                       src={`${
                         sticky
-                          ? "/images/logo/logo.svg"
-                          : "/images/logo/logo.svg"
+                          ? "/images/logo/logo-white.svg"
+                          : "/images/logo/logo-white.svg"
                       }`}
                       alt="logo"
                       width={140}
                       height={30}
-                      className="header-logo w-full dark:hidden"
+                      className="w-full dark:hidden"
                     />
                     <Image
-                      src={"/images/logo/logo.svg"}
+                      src={"/images/logo/logo-white.svg"}
                       alt="logo"
                       width={140}
                       height={30}
-                      className="header-logo hidden w-full dark:block"
+                      className="hidden w-full dark:block"
                     />
                   </>
                 )}

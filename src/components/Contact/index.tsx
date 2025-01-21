@@ -1,3 +1,5 @@
+import MyFancyButton from "../MyFancyButton/MyFancyButton";
+
 const Contact = () => {
   return (
     <section
@@ -127,13 +129,12 @@ const Contact = () => {
                     className="w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 font-mono text-dark placeholder:text-body-color focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
                   ></textarea>
                 </div>
-                <div className="mb-0">
-                  <button
-                    type="submit"
-                    className="border-hover text-hover hover:bg-hover inline-flex items-center justify-center rounded-[50px] border-[2px] px-4 py-[4px] font-mono text-base font-medium transition duration-300 ease-in-out hover:text-white"
-                  >
-                    Send
-                  </button>
+
+                <div className="h-12 w-full border-y-[0.5px] border-dark-5">
+                  <MyFancyButton
+                    mainContent="contact us"
+                    slideUpContent="contact us"
+                  />
                 </div>
               </form>
             </div>
