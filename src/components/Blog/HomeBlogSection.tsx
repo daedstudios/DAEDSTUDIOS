@@ -8,7 +8,6 @@ const HomeBlogSection = ({ posts }: any) => {
         <div className="mt-4 border-b-[0.5px] border-dark-5">
           <SectionTitle
             subtitle=".work"
-            classNameparagraph=""
             title="OUR PROJECTS"
             width="640px"
           />
