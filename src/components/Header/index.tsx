@@ -6,7 +6,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-
 const Header = () => {
   const { data: session } = useSession();
 
@@ -51,9 +50,9 @@ const Header = () => {
             : "absolute bg-transparent"
         }`}
       >
-        <div className="container">
-          <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-60 max-w-full px-4">
+        <div className="container mx-0 w-full">
+          <div className="relative mx-0 flex items-center justify-between">
+            <div className="w-60 max-w-full px-0">
               <Link
                 href="/"
                 className={`navbar-logo block w-full ${
@@ -101,7 +100,7 @@ const Header = () => {
                 )}
               </Link>
             </div>
-            <div className="mr-4 flex items-center gap-8 space-x-4 font-mono">
+            <div className="mr-0 flex items-center gap-8 space-x-0 font-mono">
               <Link
                 href="/"
                 className={`hidden md:block ${

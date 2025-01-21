@@ -7,19 +7,19 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="elative overflow-hidden pt-[120px] dark:bg-primary md:pt-[130px] lg:pt-[160px]"
+        className="relative overflow-hidden pt-[120px] dark:bg-primary md:pt-[130px] lg:pt-[160px]"
       >
-        <div className="items-left flex flex-wrap ">
+        <div className="items-left flex flex-wrap  ">
           <div className="w-full">
-            <div className="row-auto flex flex-wrap items-end border-b-[0.5px] border-dark-5 px-4 pb-10">
-              <h1 className=" max-w-[700px] text-8xl leading-snug dark:text-white sm:leading-snug lg:text-9xl lg:leading-[1.2]">
+            <div className="row-auto flex flex-wrap items-end justify-between border-b-[0.5px] border-dark-5  pl-4">
+              <h1 className=" mx-1 max-w-[700px] text-8xl leading-snug dark:text-white sm:leading-snug lg:text-9xl lg:leading-[1.2]">
                 WELCOME TO AE STUDIOS
               </h1>
-              <p className="mb-3 max-w-[240px] font-mono text-base font-medium text-white sm:text-left sm:text-lg sm:leading-[1.44]">
+              <p className="mb-3 max-w-[240px] font-mono text-base font-medium text-black dark:text-white sm:text-left sm:text-lg sm:leading-[1.44]">
                 the place where creativity meets cutting edge tech.
               </p>
             </div>
-            <ul className="items-left justify-left flex h-[5rem] flex-wrap gap-5 border-b-[0.5px] border-dark-5 px-4">
+            <ul className="items-left justify-left flex h-[5rem] flex-wrap border-b-[0.5px] border-dark-5 px-4">
               <li>
                 <MyFancyButton
                   mainContent="contact us"
@@ -27,7 +27,12 @@ const Hero = () => {
                 />
               </li>
               <li>
-                <Link
+                <MyFancyButton
+                  mainContent="contact us"
+                  slideUpContent="contact us"
+                />
+
+                {/* <Link
                   href="https://github.com/nextjsTemplates/play-nextjs"
                   target="_blank"
                   className="text- flex items-center gap-4 rounded-[50px] border-black px-4 py-[4px] font-mono text-base font-medium transition duration-300 ease-in-out hover:border-[2px] hover:border-white"
@@ -50,7 +55,7 @@ const Hero = () => {
                     </defs>
                   </svg>
                   Star on Github
-                </Link>
+                </Link> */}
               </li>
             </ul>
           </div>

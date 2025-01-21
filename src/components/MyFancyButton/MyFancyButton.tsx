@@ -18,7 +18,7 @@ const MyFancyButton = ({ mainContent, slideUpContent }: MyFancyButtonProps) => {
     delay: 0,
     paused: true,
     defaults: {
-      duration: 0.3,
+      duration: 0.2,
       ease: "power2",
     },
   });
@@ -50,7 +50,7 @@ const MyFancyButton = ({ mainContent, slideUpContent }: MyFancyButtonProps) => {
       }}
     >
       <div
-        className="flex h-full w-full items-center justify-center border bg-black text-white"
+        className="flex h-full w-full items-center justify-center border-x-[0.5px] border-dark-5 bg-black text-white"
         ref={maindivRef}
         onMouseLeave={(e) => {
           e.stopPropagation();

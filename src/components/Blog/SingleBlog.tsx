@@ -8,7 +8,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
 
   return (
     <div className="wow fadeInUp group mb-10" data-wow-delay=".1s">
-      <div className="mb-8 overflow-hidden rounded">
+      <div className="mb-8 overflow-hidden">
         <Link href={`/blogs/${slug}`} aria-label="blog cover" className="block">
           <Image
             src={coverImage!}
@@ -31,7 +31,9 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
             {title}
           </Link> */}
         </h3>
-        <p className="text-base w-[50%] font-mono text-dark-4 dark:text-dark-6">{excerpt}</p>
+        <p className="mx-1 w-[50%] font-mono text-base text-dark-4 dark:text-dark-6">
+          {excerpt}
+        </p>
       </div>
     </div>
   );

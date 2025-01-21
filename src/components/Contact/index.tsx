@@ -1,6 +1,9 @@
 const Contact = () => {
   return (
-    <section id="contact" className="relative border-b-[0.5px] border-dark-5 ">
+    <section
+      id="contact"
+      className=" relative mx-1 border-y-[0.5px] border-dark-5 "
+    >
       <div className="absolute left-0 top-0 -z-[1] h-full w-full dark:bg-black"></div>
       <div className="absolute left-0 top-0 -z-[1] h-1/2 w-full bg-white dark:bg-black lg:h-[45%] xl:h-1/2"></div>
       <div className=" px-4">
@@ -8,6 +11,7 @@ const Contact = () => {
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
             <div className="ud-contact-content-wrapper">
               <div className="ud-contact-title mb-12 lg:mb-[150px]">
+                <p className="py-4 font-mono">.services</p>
                 <h2 className="max-w-[260px] text-[35px] font-normal leading-[1.14] text-dark dark:text-white">
                   LET&#39;S TALK ABOUT YOUR PROBLEM
                 </h2>
@@ -60,7 +64,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="w-full translate-x-2 border-l-[0.5px]  border-dark-5  px-4 lg:w-5/12 xl:w-4/12">
+          <div className="w-full px-4 lg:w-5/12  lg:border-l-[0.5px] lg:border-dark-5 xl:w-4/12">
             <div
               className="wow fadeInUp rounded-lg bg-white px-8 py-10  dark:bg-black dark:shadow-none sm:px-10 sm:py-12 md:p-[60px] lg:p-10 lg:px-10 lg:py-12 2xl:p-[60px]"
               data-wow-delay=".2s
@@ -126,7 +130,7 @@ const Contact = () => {
                 <div className="mb-0">
                   <button
                     type="submit"
-                    className="inline-flex items-center justify-center rounded-[50px] border-[2px] border-hover px-4 py-[4px] font-mono text-base font-medium text-hover transition duration-300 ease-in-out hover:bg-hover hover:text-white"
+                    className="border-hover text-hover hover:bg-hover inline-flex items-center justify-center rounded-[50px] border-[2px] px-4 py-[4px] font-mono text-base font-medium transition duration-300 ease-in-out hover:text-white"
                   >
                     Send
                   </button>

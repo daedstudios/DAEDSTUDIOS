@@ -26,8 +26,8 @@ const SingleTestimonial = ({
 
   return (
     <div
-      className={`h-full w-full px-4 pb-[9rem] pt-[3rem] md:w-1/2 lg:w-1/3 
-    ${border_x ? "border-[0.2px] border-dark-5" : "border-[0.5px] border-dark-5"}`}
+      className={`h-full w-full px-1 pb-[9rem] pt-[3rem] md:w-1/2 lg:w-1/3 
+    `}
     >
       <div
         className="rounded-xl bg-white px-4 py-[30px] dark:bg-black sm:px-[30px]"
