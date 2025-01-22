@@ -13,7 +13,7 @@ const Contact = () => {
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
             <div className="ud-contact-content-wrapper">
               <div className="ud-contact-title mb-12 lg:mb-[150px]">
-                <p className="py-4 font-mono">.services</p>
+                <p className="py-4 font-mono">.contact</p>
                 <h2 className="max-w-[260px] text-[35px] font-normal leading-[1.14] text-dark dark:text-white">
                   LET&#39;S TALK ABOUT YOUR PROBLEM
                 </h2>
@@ -129,7 +129,6 @@ const Contact = () => {
                     className="w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 font-mono text-dark placeholder:text-body-color focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
                   ></textarea>
                 </div>
-
                 <div className="h-12 w-full border-y-[0.5px] border-dark-5">
                   <MyFancyButton
                     mainContent="contact us"

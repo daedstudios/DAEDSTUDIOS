@@ -56,14 +56,14 @@ const Footer = () => {
                 {pathUrl !== "/" ? (
                   <>
                     <Image
-                      src={`/images/logo/logo-white.svg`}
+                      src={`/images/logo/logo.svg`}
                       alt="logo"
                       width={240}
                       height={30}
                       className="header-logo w-full dark:hidden"
                     />
                     <Image
-                      src={`/images/logo/logo-white.svg`}
+                      src={`/images/logo/logo.svg`}
                       alt="logo"
                       width={240}
                       height={30}
@@ -75,8 +75,8 @@ const Footer = () => {
                     <Image
                       src={`${
                         sticky
-                          ? "/images/logo/logo-white.svg"
-                          : "/images/logo/logo-white.svg"
+                          ? "/images/logo/logo.svg"
+                          : "/images/logo/logo.svg"
                       }`}
                       alt="logo"
                       width={140}
