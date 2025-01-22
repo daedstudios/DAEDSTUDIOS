@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import AnimatedLink from "../Animations/AnimatedLink";
 
 const Header = () => {
   const { data: session } = useSession();
@@ -96,38 +97,10 @@ const Header = () => {
               </Link>
             </div>
             <div className="mr-0 flex items-center gap-8 space-x-0 font-mono">
-              <Link
-                href="/"
-                className={`hidden md:block ${
-                  pathUrl === "/" ? "text-hover" : "hover:text-hover"
-                }`}
-              >
-                home
-              </Link>
-              <Link
-                href="/about"
-                className={`hidden md:block ${
-                  pathUrl === "/about" ? "text-hover" : "hover:text-hover"
-                }`}
-              >
-                about
-              </Link>
-              <Link
-                href="/contact"
-                className={`hidden md:block ${
-                  pathUrl === "/contact" ? "text-hover" : "hover:text-hover"
-                }`}
-              >
-                contact
-              </Link>
-              <Link
-                href="/blogs"
-                className={`hidden md:block ${
-                  pathUrl === "/blogs" ? "text-hover" : "hover:text-hover"
-                }`}
-              >
-                projects
-              </Link>
+              <AnimatedLink href="/" label="home"></AnimatedLink>
+              <AnimatedLink href="/about" label="about"></AnimatedLink>
+              <AnimatedLink href="/contact" label="contact"></AnimatedLink>
+              <AnimatedLink href="/blogs" label="blogs"></AnimatedLink>
               <button
                 aria-label="theme toggler"
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
