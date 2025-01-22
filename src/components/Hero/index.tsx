@@ -19,20 +19,20 @@ const Hero = () => {
                 the place where creativity meets cutting edge tech.
               </p>
             </div>
-            <ul className="items-left justify-left flex h-[5rem] flex-wrap border-b-[0.5px] border-dark-5 px-4">
+            <ul className="items-left justify-left flex h-[4rem] flex-wrap border-b-[0.5px] border-dark-5 px-4">
               <li className="w-80">
                 <MyFancyButton
                   mainContent="contact us"
                   slideUpContent="contact us"
                 />
               </li>
-              <li className="w-80">
+              {/* <li className="w-80">
                 <MyFancyButton
                   mainContent="contact us"
                   slideUpContent="contact us"
-                />
+                /> */}
 
-                {/* <Link
+              {/* <Link
                   href="https://github.com/nextjsTemplates/play-nextjs"
                   target="_blank"
                   className="text- flex items-center gap-4 rounded-[50px] border-black px-4 py-[4px] font-mono text-base font-medium transition duration-300 ease-in-out hover:border-[2px] hover:border-white"
@@ -56,7 +56,7 @@ const Hero = () => {
                   </svg>
                   Star on Github
                 </Link> */}
-              </li>
+              {/* </li> */}
             </ul>
           </div>
         </div>
