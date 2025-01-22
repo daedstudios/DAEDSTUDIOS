@@ -2,7 +2,8 @@
 import { signOut, useSession } from "next-auth/react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
+import { Link } from "next-transition-router";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -51,7 +52,11 @@ const Header = () => {
         }`}
       >
         <div className="w-60 -translate-x-10 scale-75">
-          <Link href="/" className={`block w-full`}>
+          <Link
+            href="/"
+            onClick={(e) => pathUrl === "/" && e.preventDefault()}
+            className={`block w-full`}
+          >
             <>
               <Image
                 src={`/images/logo/logo.svg`}
@@ -73,6 +78,7 @@ const Header = () => {
         <div className="flex items-center gap-8 space-x-0 font-mono">
           <Link
             href="/"
+            onClick={(e) => pathUrl === "/" && e.preventDefault()}
             className={`hidden md:block ${
               pathUrl === "/" ? "text-hover" : "hover:text-hover"
             }`}
@@ -81,6 +87,7 @@ const Header = () => {
           </Link>
           <Link
             href="/about"
+            onClick={(e) => pathUrl === "/about" && e.preventDefault()}
             className={`hidden md:block ${
               pathUrl === "/about" ? "text-hover" : "hover:text-hover"
             }`}
@@ -89,6 +96,7 @@ const Header = () => {
           </Link>
           <Link
             href="/contact"
+            onClick={(e) => pathUrl === "/contact" && e.preventDefault()}
             className={`hidden md:block ${
               pathUrl === "/contact" ? "text-hover" : "hover:text-hover"
             }`}
@@ -97,6 +105,7 @@ const Header = () => {
           </Link>
           <Link
             href="/blogs"
+            onClick={(e) => pathUrl === "/blogs" && e.preventDefault()}
             className={`hidden md:block ${
               pathUrl === "/blogs" ? "text-hover" : "hover:text-hover"
             }`}
