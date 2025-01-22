@@ -15,7 +15,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "AE STUDIOS",
-  description: "Web and Software Design and Development",
+  description: "Web- and Software Design and Development",
 };
 
 export default function Home() {

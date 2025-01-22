@@ -13,7 +13,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
           <Image
             src={coverImage!}
             alt="image"
-            className="w-full transition group-hover:rotate-6 group-hover:scale-125"
+            className="w-full transition group-hover:scale-125"
             width={408}
             height={272}
           />
@@ -31,7 +31,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
             {title}
           </Link> */}
         </h3>
-        <p className="mx-1 w-[50%] font-mono text-base text-dark-4 dark:text-dark-6">
+        <p className="mx-1 font-mono text-base text-dark-4 dark:text-dark-6">
           {excerpt}
         </p>
       </div>

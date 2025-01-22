@@ -50,7 +50,7 @@ const MyFancyButton = ({ mainContent, slideUpContent }: MyFancyButtonProps) => {
       }}
     >
       <div
-        className="flex h-full w-auto items-center justify-center border-x-[0.5px] border-dark-5 bg-black text-white"
+        className="justify-left flex h-full w-auto items-center border-x-[0.5px] border-dark-5 bg-white px-1 text-black dark:bg-black dark:text-white"
         ref={maindivRef}
         onMouseLeave={(e) => {
           e.stopPropagation();
@@ -59,7 +59,7 @@ const MyFancyButton = ({ mainContent, slideUpContent }: MyFancyButtonProps) => {
         {mainContent}
       </div>
       <div
-        className="top-[100%] flex h-full w-full items-center justify-center bg-white text-black hover:cursor-pointer"
+        className="text-whitehover:cursor-pointer justify-left bg-hover dark:bg-hover top-[100%] flex h-full w-full items-center px-1 text-white dark:text-white"
         ref={seconddivRef}
       >
         {slideUpContent}

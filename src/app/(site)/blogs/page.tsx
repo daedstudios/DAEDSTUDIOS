@@ -2,10 +2,10 @@ import SingleBlog from "@/components/Blog/SingleBlog";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import { getAllPosts } from "@/utils/markdown";
 import { Metadata } from "next";
+import SectionTitle from "@/components/Common/SectionTitle";
 
 export const metadata: Metadata = {
-  title:
-    "Blog Grids | Play SaaS Starter Kit and Boilerplate for Next.js",
+  title: "Blog Grids | Play SaaS Starter Kit and Boilerplate for Next.js",
   description: "Blog grids page description",
 };
 
@@ -14,11 +14,25 @@ const Blog = () => {
 
   return (
     <>
-      <Breadcrumb pageName="Blog Grids" />
+      <div className="flex w-full flex-wrap items-end justify-between border-y-[0.5px] border-dark-5">
+        <div className="mx-1 mt-72 flex min-w-[70px] pl-4">
+          <SectionTitle
+            paragraph=""
+            subtitle=""
+            title="WE ARE AE STUDIOS"
+            width="640px"
+          />
+        </div>
+        <p className="mb-4 ml-5 mr-8 max-w-[240px] font-mono text-base font-medium text-black dark:text-white sm:text-left sm:text-lg sm:leading-[1.44]">
+          Crafting solid Web- and Software-Solutions designed to build engaging
+          brands.
+        </p>
+      </div>
+      {/* <Breadcrumb pageName="Blog Grids" /> */}
 
       <section className="pb-10 pt-20 lg:pb-20 lg:pt-[120px]">
         <div className="">
-          <div className="-mx-4 flex flex-wrap justify-center">
+          <div className=" flex flex-wrap justify-center">
             {posts.map((blog, i) => (
               <div key={i} className="w-full px-4 md:w-2/3 lg:w-1/2 xl:w-1/3">
                 <SingleBlog blog={blog} />
