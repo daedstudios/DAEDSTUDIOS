@@ -66,14 +66,14 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="w-full px-4 lg:w-5/12  lg:border-l-[0.5px] lg:border-dark-5 xl:w-4/12">
+          <div className="w-full lg:w-5/12  lg:border-l-[0.5px] lg:border-dark-5 xl:w-4/12">
             <div
-              className="wow fadeInUp rounded-lg bg-white px-8 py-10  dark:bg-black dark:shadow-none sm:px-10 sm:py-12 md:p-[60px] lg:p-10 lg:px-10 lg:py-12 2xl:p-[60px]"
+              className="wow fadeInUp rounded-lg bg-white px-3 py-10  dark:bg-black dark:shadow-none  sm:py-12  lg:py-12 lg:pl-0 "
               data-wow-delay=".2s
               "
             >
               <form>
-                <div className="mb-[22px]">
+                <div className="mb-[22px] px-1">
                   <label
                     htmlFor="fullName"
                     className="mb-4 block text-sm text-black dark:text-white"
@@ -87,7 +87,7 @@ const Contact = () => {
                     className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 font-mono text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-3"
                   />
                 </div>
-                <div className="mb-[22px]">
+                <div className="mb-[22px] px-1">
                   <label
                     htmlFor="email"
                     className="mb-4 block text-sm text-black dark:text-white"
@@ -101,7 +101,7 @@ const Contact = () => {
                     className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 font-mono text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
                   />
                 </div>
-                <div className="mb-[22px]">
+                <div className="mb-[22px] px-1">
                   <label
                     htmlFor="phone"
                     className="mb-4 block text-sm text-black dark:text-white"
@@ -115,7 +115,7 @@ const Contact = () => {
                     className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 font-mono text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
                   />
                 </div>
-                <div className="mb-[30px]">
+                <div className="mb-[30px] px-1">
                   <label
                     htmlFor="message"
                     className="mb-4 block text-sm text-black dark:text-white"
@@ -129,11 +129,11 @@ const Contact = () => {
                     className="w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 font-mono text-dark placeholder:text-body-color focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
                   ></textarea>
                 </div>
-                <div className="h-12 w-full border-y-[0.5px] border-dark-5">
+                <div className="h-16 w-full border-y-[0.5px] border-dark-5">
                   <MyFancyButton
                     mainContent="send"
                     slideUpContent="send"
-                    className="border-x-[0.5px] border-dark-5"
+                    className=""
                   >
                     <svg
                       width="25"

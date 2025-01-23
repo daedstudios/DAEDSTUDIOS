@@ -73,7 +73,7 @@ const MyFancyButton = ({
         {children}
       </div>
       <div
-        className="top-[100%] flex h-full w-full items-center justify-between bg-hover px-2 leading-[100%] text-white opacity-0 hover:cursor-pointer dark:bg-hover dark:text-white"
+        className="bg-hover dark:bg-hover top-[100%] flex h-full w-full items-center justify-between px-2 leading-[100%] text-dark opacity-0 hover:cursor-pointer dark:text-white"
         ref={seconddivRef}
       >
         <p>{slideUpContent}</p>

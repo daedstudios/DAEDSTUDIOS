@@ -3,6 +3,7 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { getAllPosts } from "@/utils/markdown";
 import { Metadata } from "next";
 import SectionTitle from "@/components/Common/SectionTitle";
+import Contact from "@/components/Contact";
 
 export const metadata: Metadata = {
   title: "Blog Grids | Play SaaS Starter Kit and Boilerplate for Next.js",
@@ -15,7 +16,7 @@ const Blog = () => {
   return (
     <>
       <div className="flex w-full flex-wrap items-end justify-between border-y-[0.5px] border-dark-5">
-        <div className="mx-1 mt-72 flex min-w-[70px] pl-4">
+        <div className="mx-1 mt-72 flex min-w-[320px] pl-4">
           <SectionTitle
             paragraph=""
             subtitle=""
@@ -41,6 +42,7 @@ const Blog = () => {
           </div>
         </div>
       </section>
+      <Contact />
     </>
   );
 };

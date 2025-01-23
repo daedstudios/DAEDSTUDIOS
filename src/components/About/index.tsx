@@ -27,7 +27,7 @@ const About = () => {
 
                 <a
                   href="/#"
-                  className="inline-flex items-center justify-center rounded-[50px] bg-hover px-7 py-[9px] font-mono text-center text-base font-medium text-white duration-300 hover:bg-primary/90"
+                  className="bg-hover inline-flex items-center justify-center rounded-[50px] px-7 py-[9px] text-center font-mono text-base font-medium text-white duration-300 hover:bg-primary/90"
                 >
                   learn more
                 </a>
