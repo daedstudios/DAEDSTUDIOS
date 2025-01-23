@@ -27,7 +27,7 @@ const HomeBlogSection = ({ posts }: any) => {
               width="640px"
             />
           </div>
-          <p className="mb-4 ml-5 mr-8 w-[345px] font-mono text-base font-medium text-black dark:text-white sm:text-left sm:text-lg sm:leading-[1.44]">
+          <p className="lg:m-w-[50%] mb-4 ml-5 mr-8 font-mono text-base font-medium text-black dark:text-white sm:text-left sm:text-lg sm:leading-[1.44]">
             Crafting solid Web- and Software-Solutions designed to build
             engaging brands.
           </p>
