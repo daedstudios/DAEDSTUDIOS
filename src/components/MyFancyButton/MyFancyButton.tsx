@@ -1,16 +1,23 @@
 "use client";
-import React from "react";
+import React, { Children } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-
+import { cn } from "../../../lib/utils";
 gsap.registerPlugin(useGSAP);
 
 interface MyFancyButtonProps {
   mainContent: string;
   slideUpContent: string;
+  className?: string; // Add className prop
+  children?: React.ReactNode;
 }
 
-const MyFancyButton = ({ mainContent, slideUpContent }: MyFancyButtonProps) => {
+const MyFancyButton = ({
+  mainContent,
+  slideUpContent,
+  className,
+  children,
+}: MyFancyButtonProps) => {
   const maindivRef = React.useRef(null);
   const seconddivRef = React.useRef(null);
 
@@ -31,6 +38,7 @@ const MyFancyButton = ({ mainContent, slideUpContent }: MyFancyButtonProps) => {
       seconddivRef.current,
       {
         y: "-100%",
+        opacity: 1,
       },
       "<",
     );
@@ -38,7 +46,10 @@ const MyFancyButton = ({ mainContent, slideUpContent }: MyFancyButtonProps) => {
 
   return (
     <div
-      className="h-full w-auto overflow-hidden font-mono text-xl hover:cursor-pointer"
+      className={cn(
+        "h-full w-auto overflow-hidden font-mono text-xl leading-[100%] hover:cursor-pointer",
+        className, // Merge additional classes
+      )}
       onMouseEnter={() => {
         tl.play();
       }}
@@ -50,19 +61,21 @@ const MyFancyButton = ({ mainContent, slideUpContent }: MyFancyButtonProps) => {
       }}
     >
       <div
-        className="justify-left flex h-full w-auto items-center border-x-[0.5px] border-dark-5 bg-white px-1 text-black dark:bg-black dark:text-white"
+        className="flex h-full w-auto items-center justify-between bg-white px-2 leading-[100%] text-black dark:bg-black dark:text-white"
         ref={maindivRef}
         onMouseLeave={(e) => {
           e.stopPropagation();
         }}
       >
-        {mainContent}
+        <p>{mainContent}</p>
+        {children}
       </div>
       <div
-        className="text-whitehover:cursor-pointer justify-left bg-hover dark:bg-hover top-[100%] flex h-full w-full items-center px-1 text-white dark:text-white"
+        className="top-[100%] flex h-full w-full items-center justify-between bg-hover px-2 leading-[100%] text-white opacity-0 hover:cursor-pointer dark:bg-hover dark:text-white"
         ref={seconddivRef}
       >
-        {slideUpContent}
+        <p>{slideUpContent}</p>
+        {children}
       </div>
     </div>
   );
