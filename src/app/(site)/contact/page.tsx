@@ -12,7 +12,7 @@ const ContactPage = () => {
   return (
     <>
       <div className="flex w-full flex-wrap items-end justify-between ">
-        <div className="mx-1 mt-72 flex min-w-[70px] pl-4">
+        <div className="mx-1 mt-40 flex min-w-[320px] pl-4">
           <SectionTitle
             paragraph=""
             subtitle=""

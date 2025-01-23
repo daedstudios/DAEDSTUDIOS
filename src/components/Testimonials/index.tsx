@@ -40,7 +40,7 @@ const Testimonials = () => {
         CRAFTING DIGITAL EXPERIENCE...!
       </h1> */}
       <div className="flex w-full flex-wrap items-end justify-between border-y-[0.5px] border-dark-5">
-        <div className="mx-1 mt-36 flex min-w-[70px] pl-4">
+        <div className="mx-1 mt-12 flex min-w-[320px] pl-4 lg:mt-36">
           <SectionTitle
             paragraph=""
             subtitle=".client"
@@ -49,7 +49,7 @@ const Testimonials = () => {
           />
         </div>
         <p className="lg-1/3 mb-4 ml-5 mr-8 max-w-[345px] font-mono text-base font-medium text-black dark:text-white sm:text-left sm:text-lg sm:leading-[1.44] lg:overflow-hidden">
-          At AE Studios, our success is defined by the impact we create for our
+          At AE STUDIOS, our success is defined by the impact we create for our
           clients. From innovative SaaS solutions to seamless web experiences,
           every project reflects our commitment to excellence. But dont just
           take our word for it—heres what our clients have to say about working

@@ -19,7 +19,7 @@ const HomeBlogSection = ({ posts }: any) => {
           </div>
         </div> */}
         <div className="flex w-full flex-wrap items-end justify-between border-y-[0.5px] border-dark-5">
-          <div className="mx-1 mt-36 flex min-w-[70px] pl-4">
+          <div className="mx-1 mt-12 flex min-w-[320px] pl-4 lg:mt-36">
             <SectionTitle
               paragraph=""
               subtitle=".work"

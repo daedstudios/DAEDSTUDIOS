@@ -12,15 +12,14 @@ const Hero = () => {
         <div className="items-left flex flex-wrap  ">
           <div className="w-full">
             <div className="row-auto flex flex-wrap items-end justify-between border-b-[0.5px] border-dark-5  pl-4">
-              <h1 className=" mx-1 max-w-[700px] text-8xl leading-snug dark:text-white sm:leading-snug lg:text-9xl lg:leading-[1.2]">
+              <h1 className=" mx-1 max-w-[610px] text-8xl leading-snug dark:text-white sm:leading-snug lg:text-9xl lg:leading-[1.2]">
                 WELCOME TO AE STUDIOS
               </h1>
-              <p className=" mb-3 ml-5 mr-8 w-[345px] items-start font-mono text-base font-medium text-black dark:text-white sm:text-left sm:text-lg sm:leading-[1.44]">
+              <p className=" mb-3 ml-5 mr-8 hidden w-[345px] items-start font-mono text-base font-medium text-black dark:text-white sm:text-left lg:flex">
                 the place where creativity meets cutting edge tech.
               </p>
             </div>
-            <ul className="items-left justify-left flex h-[4rem] flex-wrap border-b-[0.5px] border-dark-5 px-4">
-
+            <ul className="items-left justify-left flex h-[4rem] flex-wrap px-4">
               <li className="w-80">
                 <MyFancyButton
                   mainContent="contact us"
