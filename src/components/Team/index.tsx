@@ -21,42 +21,19 @@ const teamData: TeamType[] = [
     twitterLink: "/#",
     instagramLink: "/#",
   },
-  {
-    id: 3,
-    name: "Andrieo Gloree",
-    designation: "App Developer",
-    image: "/images/team/team-03.png",
-    facebookLink: "/#",
-    twitterLink: "/#",
-    instagramLink: "/#",
-  },
-  {
-    id: 4,
-    name: "Jackie Sanders",
-    designation: "Content Writer",
-    image: "/images/team/team-04.png",
-    facebookLink: "/#",
-    twitterLink: "/#",
-    instagramLink: "/#",
-  },
 ];
 
 const Team = () => {
   return (
-    <section
-      id="team"
-      className="overflow-hidden bg-gray-1 pb-12 pt-20 dark:bg-dark-2 lg:pb-[90px] lg:pt-[120px]"
-    >
+    <section id="team" className="overflow-hidden bg-white dark:bg-black ">
       <div className="">
-        <div className="mb-[60px]">
-          <SectionTitle
+        {/* <SectionTitle
             subtitle="Our Team"
             title="Meet Our Team"
             paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
             width="640px"
             center
-          />
-        </div>
+          /> */}
 
         <div className="-mx-4 flex flex-wrap justify-center">
           {teamData.map((team, i) => (
