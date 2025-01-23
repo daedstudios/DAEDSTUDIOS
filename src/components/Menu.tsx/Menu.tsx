@@ -4,6 +4,14 @@ import { useGSAP } from "@gsap/react";
 import { Link } from "next-transition-router";
 import { usePathname } from "next/navigation";
 gsap.registerPlugin(useGSAP);
+import {
+  Moon,
+  Sun,
+  X,
+  ChevronRight,
+  ChevronLeft,
+  Menu as MenuIcon,
+} from "lucide-react";
 
 const Menu = () => {
   const menuContainer = React.useRef(null);
@@ -55,12 +63,18 @@ const Menu = () => {
         }}
         className="cursor-pointer hover:text-hover md:hidden"
       >
-        menu
+        <MenuIcon className="h-8 w-8" />
       </div>
       <div
         className="absolute left-0 top-0 z-10 hidden h-0 w-screen flex-col items-center justify-center gap-4 bg-white font-mono text-3xl opacity-0 dark:bg-black"
         ref={menuContainer}
       >
+        <div className="absolute top-4 flex h-auto w-screen justify-end border-y-[0.5px] border-dark-5">
+          <X
+            className="mr-8 h-10 w-10 cursor-pointer  transition-transform duration-300 hover:rotate-180 hover:scale-125"
+            onClick={() => tl.current.reverse()}
+          />
+        </div>
         {[
           { href: "/", text: "home" },
           { href: "/about", text: "about" },
@@ -73,7 +87,7 @@ const Menu = () => {
             onClick={(e) => handleLinkClick(e, href)}
             className={` ${
               pathUrl === href ? "text-hover" : "hover:text-hover"
-            }`}
+            } w-32 text-left`}
           >
             {text}
           </Link>
