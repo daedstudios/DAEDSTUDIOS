@@ -51,8 +51,8 @@ const Testimonials = () => {
         <p className="lg-1/3 mb-4 ml-5 mr-8 max-w-[345px] font-mono text-base font-medium text-black dark:text-white sm:text-left sm:text-lg sm:leading-[1.44] lg:overflow-hidden">
           At AE Studios, our success is defined by the impact we create for our
           clients. From innovative SaaS solutions to seamless web experiences,
-          every project reflects our commitment to excellence. But don't just
-          take our word for it—here's what our clients have to say about working
+          every project reflects our commitment to excellence. But dont jus"t
+          take our word for it—here"s what our clients have to say about working
           with us.
         </p>
       </div>
