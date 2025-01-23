@@ -24,7 +24,7 @@ const Menu = () => {
       {
         height: "100vh",
         opacity: 1,
-        duration: 0.7,
+        duration: 0.5,
         ease: "power2",
         display: "flex",
       },
