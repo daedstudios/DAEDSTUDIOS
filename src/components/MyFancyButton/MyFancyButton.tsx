@@ -21,20 +21,22 @@ const MyFancyButton = ({
   const maindivRef = React.useRef(null);
   const seconddivRef = React.useRef(null);
 
-  let tl = gsap.timeline({
-    delay: 0,
-    paused: true,
-    defaults: {
-      duration: 0.2,
-      ease: "power2",
-    },
-  });
+  const tl = React.useRef(
+    gsap.timeline({
+      delay: 0,
+      paused: true,
+      defaults: {
+        duration: 0.2,
+        ease: "power2",
+      },
+    }),
+  );
 
   useGSAP(() => {
-    tl.to(maindivRef.current, {
+    tl.current.to(maindivRef.current, {
       y: "-100%",
     });
-    tl.to(
+    tl.current.to(
       seconddivRef.current,
       {
         y: "-100%",
@@ -51,13 +53,13 @@ const MyFancyButton = ({
         className, // Merge additional classes
       )}
       onMouseEnter={() => {
-        tl.play();
+        tl.current.play();
       }}
       onMouseLeave={(e) => {
         e.stopPropagation();
         console.log("e", e);
         console.log("mouse out");
-        tl.reverse();
+        tl.current.reverse();
       }}
     >
       <div

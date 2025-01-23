@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Link } from "next-transition-router";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import Menu from "../Menu.tsx/Menu";
 
 const Header = () => {
   const { data: session } = useSession();
@@ -45,7 +46,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`ud-header left-0 top-0 z-40 flex w-screen items-center justify-between border-b-[0.5px] border-dark-5 px-8 ${
+        className={`ud-header left-0 top-0 z-50 flex w-screen items-center justify-between border-b-[0.5px] border-dark-5 px-8 ${
           sticky
             ? "shadow-nav fixed z-[999] border-b border-stroke bg-white/80 backdrop-blur-[5px] dark:border-dark-3/20 dark:bg-black/85"
             : "absolute bg-transparent"
@@ -112,6 +113,7 @@ const Header = () => {
           >
             projects
           </Link>
+          <Menu />
           <button
             aria-label="theme toggler"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
