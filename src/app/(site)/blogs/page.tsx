@@ -24,9 +24,11 @@ const Blog = () => {
             width="640px"
           />
         </div>
-        <p className="mb-4 ml-5 mr-8 max-w-[240px] font-mono text-base font-medium text-black dark:text-white sm:text-left sm:text-lg sm:leading-[1.44]">
-          Crafting solid Web- and Software-Solutions designed to build engaging
-          brands.
+        <p className="mb-4 ml-5 mr-8 font-mono text-base font-medium text-black dark:text-white sm:text-left sm:text-lg sm:leading-[1.44] lg:lg:max-w-[50%]">
+          AE Studios exists to transform ambitious ideas into reality. By
+          prioritizing strategic thinking and modern design, we build impactful
+          tools that connect brands with their audiences. Every line of code and
+          every pixel serves a purpose.
         </p>
       </div>
       {/* <Breadcrumb pageName="Blog Grids" /> */}

@@ -26,7 +26,7 @@ const SingleTestimonial = ({
 
   return (
     <div
-      className={`h-full w-full px-1 pb-[9rem] pt-[3rem] md:w-1/2 lg:w-1/3 
+      className={`h-full w-full px-1 pb-[3rem] pt-[3rem] md:w-1/2 lg:w-1/3 
     `}
     >
       <div
@@ -37,11 +37,11 @@ const SingleTestimonial = ({
           {ratingIcons}
         </div>
 
-        <p className="mb-6 font-mono text-base text-dark-4 dark:text-dark-6">
+        <p className="mb-6 ml-1 font-mono text-base text-dark-4 dark:text-dark-6">
           {content}
         </p>
 
-        <div className="flex items-center gap-4">
+        <div className="ml-1 flex items-center gap-4">
           <div className="h-[50px] w-[50px] overflow-hidden rounded-full">
             <Image src={image} alt={name} width={50} height={50} />
           </div>

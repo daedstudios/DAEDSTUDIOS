@@ -9,7 +9,7 @@ const Features = () => {
       <h1 className="animate-slideRightToLeft w-full  whitespace-nowrap text-6xl md:text-9xl lg:text-9xl">
         CRAFTING DIGITAL EXPERIENCE.
       </h1>
-      <div className="mx-1 mb-[9rem] flex flex-wrap items-center border-t-[0.5px]  border-dark-5 pt-[3rem]">
+      <div className="mx-1 mb-[3rem] flex flex-wrap items-center border-t-[0.5px]  border-dark-5 pt-[6rem]">
         {featuresData.map((feature, i) => (
           <SingleFeature key={i} feature={feature} />
         ))}

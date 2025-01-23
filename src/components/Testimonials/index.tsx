@@ -48,7 +48,7 @@ const Testimonials = () => {
             width="640px"
           />
         </div>
-        <p className="lg-1/3 mb-4 ml-5 mr-8 max-w-[345px] font-mono text-base font-medium text-black dark:text-white sm:text-left sm:text-lg sm:leading-[1.44] lg:overflow-hidden">
+        <p className="lg-1/3 mb-4 ml-5 mr-8 font-mono text-base font-medium text-black dark:text-white sm:text-left sm:text-lg sm:leading-[1.44] lg:max-w-[50%] lg:overflow-hidden">
           At AE STUDIOS, our success is defined by the impact we create for our
           clients. From innovative SaaS solutions to seamless web experiences,
           every project reflects our commitment to excellence. But dont just
