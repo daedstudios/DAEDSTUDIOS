@@ -172,6 +172,7 @@ export default async function Post({ params }: Props) {
                   </div>
                 </div>
               </div>
+
               <div className="mx-1 flex flex-wrap border-t-[0.5px] border-dark-5 px-5">
                 <div className="w-full  lg:w-8/12">
                   <div className="blog-details  py-3 font-mono">
@@ -182,6 +183,7 @@ export default async function Post({ params }: Props) {
                   <div>
                     <div className="mb-8 ml-0 flex flex-wrap">
                       <div className="w-full px-1">
+
                         <h2
                           className="wow fadeInUp relative pt-5 text-2xl font-normal text-dark dark:text-white sm:text-[28px]"
                           data-wow-delay=".1s"
@@ -218,13 +220,17 @@ export default async function Post({ params }: Props) {
             </div>
           </div>
 
+
           <div className="mx-0 flex flex-wrap border-y-[0.5px] border-dark-5">
+
             <div
               className="wow fadeInUp mt-14 w-full px-0"
               data-wow-delay=".2s"
             >
               <h2 className="relative pb-3 pl-5 text-2xl font-normal text-dark dark:text-white sm:text-[28px]">
+
                 RELATED PROJETS
+
               </h2>
               <span className="mb-3 inline-block h-[2px] w-20 bg-primary"></span>
             </div>
