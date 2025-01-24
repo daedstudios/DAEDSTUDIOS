@@ -57,8 +57,6 @@ const MyFancyButton = ({
       }}
       onMouseLeave={(e) => {
         e.stopPropagation();
-        console.log("e", e);
-        console.log("mouse out");
         tl.current.reverse();
       }}
     >
