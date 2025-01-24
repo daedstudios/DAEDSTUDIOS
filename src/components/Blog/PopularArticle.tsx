@@ -8,12 +8,12 @@ const PopularArticle = (props: {
 }) => {
   const { image, title, name } = props;
   return (
-    <div className="w-full px-4 md:w-1/2 lg:w-full">
+    <div className="w-full px-1 md:w-1/2 lg:w-full">
       <div
-        className="wow fadeInUp mb-5 flex w-full items-center border-b border-stroke pb-5 dark:border-dark-3"
+        className="wow fadeInUp mb-5 flex w-full items-center  border-dark-5 pb-5 dark:border-dark-5"
         data-wow-delay=".1s"
       >
-        <div className={`mr-5 overflow-hidden rounded`}>
+        <div className={`mr-5 overflow-hidden`}>
           <Image
             src={image}
             alt="image"
@@ -27,7 +27,7 @@ const PopularArticle = (props: {
           <h4>
             <Link
               href="/#"
-              className="mb-1 inline-block text-lg font-medium leading-snug text-dark hover:text-primary dark:text-dark-6 dark:hover:text-primary lg:text-base xl:text-lg"
+              className="mb-1 inline-block font-mono text-lg font-medium leading-snug text-dark hover:text-primary dark:text-dark-6 dark:hover:text-primary lg:text-base xl:text-lg"
             >
               {title}
             </Link>
