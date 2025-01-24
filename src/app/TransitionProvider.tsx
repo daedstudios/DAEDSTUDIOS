@@ -16,8 +16,6 @@ export function TransitionProvider({
     <TransitionRouter
       auto={true}
       leave={(next, from, to) => {
-        console.log({ from, to });
-
         const tl = gsap
           .timeline({
             onComplete: next,
@@ -81,11 +79,11 @@ export function TransitionProvider({
 
       <div
         ref={firstLayer}
-        className="absolute inset-0 z-50 -translate-x-full bg-white dark:bg-black"
+        className="fixed inset-0 z-50 -translate-x-full bg-white dark:bg-black"
       />
       <div
         ref={secondLayer}
-        className="absolute inset-0 z-50 -translate-x-full bg-white dark:bg-black"
+        className="fixed inset-0 z-50 -translate-x-full bg-white dark:bg-black"
       />
     </TransitionRouter>
   );

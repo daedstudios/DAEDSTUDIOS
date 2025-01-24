@@ -7,6 +7,7 @@ import markdownToHtml from "@/utils/markdownToHtml";
 import { format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 type Props = {
   params: { slug: string };
@@ -77,6 +78,8 @@ export default async function Post({ params }: Props) {
 
   const content = await markdownToHtml(post.content || "");
 
+  console.log("content", content);
+
   return (
     <>
       <Breadcrumb pageName="PROJECT CASE STUDY" />
@@ -118,7 +121,80 @@ export default async function Post({ params }: Props) {
                         </Link>
                       </p>
                     </div>
-                    {/* <div className="mb-4 flex  items-center">
+                  </div>
+                </div>
+              </div>
+
+              <div className="mx-1 flex flex-wrap border-t-[0.5px] border-dark-5 px-5">
+                <div className="w-full  lg:w-8/12">
+                  <div className="blog-details  py-3 font-mono">
+                    <div dangerouslySetInnerHTML={{ __html: content }}></div>
+                  </div>
+                </div>
+                <div className="w-full  border-dark-5 px-0 lg:w-4/12 lg:border-l-[0.5px]">
+                  <div>
+                    <div className="mb-8 ml-0 flex flex-wrap">
+                      <div className="w-full px-1">
+                        <h2
+                          className="wow fadeInUp relative pt-5 text-2xl font-normal text-dark dark:text-white sm:text-[28px]"
+                          data-wow-delay=".1s"
+                        >
+                          OTHER PROJECTS
+                        </h2>
+                        <span className="mb-10 inline-block h-[2px] w-20 bg-primary"></span>
+                      </div>
+                      {posts
+                        .filter((blog) => blog.slug !== params.slug)
+                        .slice(0, 3)
+                        .map((blog, i) => (
+                          <PopularArticle
+                            key={i}
+                            image={blog?.coverImage}
+                            title={blog?.title.slice(0, 30)}
+                            name={blog?.author}
+                          />
+                        ))}
+                    </div>
+
+                    <Image
+                      src="/images/blog/oet.svg"
+                      alt="image"
+                      className="w-full translate-x-1 scale-[1.03] object-cover object-center"
+                      width={408}
+                      height={254}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mx-0 flex flex-wrap border-y-[0.5px] border-dark-5">
+            <div
+              className="wow fadeInUp mt-14 w-full px-0"
+              data-wow-delay=".2s"
+            >
+              <h2 className="relative pb-3 pl-5 text-2xl font-normal text-dark dark:text-white sm:text-[28px]">
+                RELATED PROJETS
+              </h2>
+              <span className="mb-3 inline-block h-[2px] w-20 bg-primary"></span>
+            </div>
+            {posts
+              .filter((blog) => blog.slug !== params.slug)
+              .slice(0, 3)
+              .map((blog: any, i: number) => (
+                <div key={i} className="w-full px-4 md:w-1/2 lg:w-1/3">
+                  <SingleBlog blog={blog} />
+                </div>
+              ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+{
+  /* <div className="mb-4 flex  items-center">
                       <p className="mr-5 flex max-w-4 flex-wrap items-center text-sm font-medium text-white md:mr-6">
                         <span className="mr-3">
                           <svg
@@ -168,81 +244,5 @@ export default async function Post({ params }: Props) {
                         </span>
                         35
                       </p>
-                    </div> */}
-                  </div>
-                </div>
-              </div>
-
-              <div className="mx-1 flex flex-wrap border-t-[0.5px] border-dark-5 px-5">
-                <div className="w-full  lg:w-8/12">
-                  <div className="blog-details  py-3 font-mono">
-                    <div dangerouslySetInnerHTML={{ __html: content }}></div>
-                  </div>
-                </div>
-                <div className="w-full  border-dark-5 px-0 lg:w-4/12 lg:border-l-[0.5px]">
-                  <div>
-                    <div className="mb-8 ml-0 flex flex-wrap">
-                      <div className="w-full px-1">
-
-                        <h2
-                          className="wow fadeInUp relative pt-5 text-2xl font-normal text-dark dark:text-white sm:text-[28px]"
-                          data-wow-delay=".1s"
-                        >
-                          OTHER PROJECTS
-                        </h2>
-                        <span className="mb-10 inline-block h-[2px] w-20 bg-primary"></span>
-                      </div>
-                      {posts.slice(0, 3).map((blog, i) => (
-                        <PopularArticle
-                          key={i}
-                          image={blog?.coverImage}
-                          title={blog?.title.slice(0, 30)}
-                          name={blog?.author}
-                        />
-                      ))}
-                    </div>
-
-                    <div
-                      className="wow fadeInUp mb-12 overflow-hidden rounded"
-                      data-wow-delay=".1s"
-                    >
-                      <Image
-                        src="/images/blog/bannder-ad.png"
-                        alt="image"
-                        className="w-full"
-                        width={408}
-                        height={254}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div className="mx-0 flex flex-wrap border-y-[0.5px] border-dark-5">
-
-            <div
-              className="wow fadeInUp mt-14 w-full px-0"
-              data-wow-delay=".2s"
-            >
-              <h2 className="relative pb-3 pl-5 text-2xl font-normal text-dark dark:text-white sm:text-[28px]">
-
-                RELATED PROJETS
-
-              </h2>
-              <span className="mb-3 inline-block h-[2px] w-20 bg-primary"></span>
-            </div>
-
-            {posts.slice(0, 3).map((blog: any, i: number) => (
-              <div key={i} className="w-full px-4 md:w-1/2 lg:w-1/3">
-                <SingleBlog blog={blog} />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-    </>
-  );
+                    </div> */
 }

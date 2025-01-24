@@ -53,45 +53,20 @@ const Footer = () => {
                   sticky ? "py-2" : "py-5"
                 } `}
               >
-                {pathUrl !== "/" ? (
-                  <>
-                    <Image
-                      src={`/images/logo/logo.svg`}
-                      alt="logo"
-                      width={240}
-                      height={30}
-                      className="header-logo w-full dark:hidden"
-                    />
-                    <Image
-                      src={`/images/logo/logo.svg`}
-                      alt="logo"
-                      width={240}
-                      height={30}
-                      className="header-logo hidden w-full dark:block"
-                    />
-                  </>
-                ) : (
-                  <>
-                    <Image
-                      src={`${
-                        sticky
-                          ? "/images/logo/logo.svg"
-                          : "/images/logo/logo.svg"
-                      }`}
-                      alt="logo"
-                      width={140}
-                      height={30}
-                      className="header-logo w-full dark:hidden"
-                    />
-                    <Image
-                      src={"/images/logo/logo-white.svg"}
-                      alt="logo"
-                      width={140}
-                      height={30}
-                      className="header-logo hidden w-full dark:block"
-                    />
-                  </>
-                )}
+                <Image
+                  src={`/images/logo/logo-white.svg`}
+                  alt="logo"
+                  width={240}
+                  height={30}
+                  className="header-logo w-full dark:block"
+                />
+                <Image
+                  src={`/images/logo/logo.svg`}
+                  alt="logo"
+                  width={240}
+                  height={30}
+                  className="header-logo hidden w-full dark:hidden"
+                />
               </Link>
             </div>
             <div className="mr-4 flex items-center gap-8 space-x-4 font-mono">
