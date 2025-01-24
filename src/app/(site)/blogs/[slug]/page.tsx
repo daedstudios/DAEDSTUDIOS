@@ -77,6 +77,9 @@ export default async function Post({ params }: Props) {
   ]);
 
   const content = await markdownToHtml(post.content || "");
+
+  console.log("content", content);
+
   return (
     <>
       <Breadcrumb pageName="PROJECT CASE STUDY" />
@@ -153,18 +156,13 @@ export default async function Post({ params }: Props) {
                         ))}
                     </div>
 
-                    <div
-                      className="wow fadeInUp mb-12 overflow-hidden rounded"
-                      data-wow-delay=".1s"
-                    >
-                      <Image
-                        src="/images/blog/bannder-ad.png"
-                        alt="image"
-                        className="w-full"
-                        width={408}
-                        height={254}
-                      />
-                    </div>
+                    <Image
+                      src="/images/blog/oet.svg"
+                      alt="image"
+                      className="w-full translate-x-1 scale-[1.03] object-cover object-center"
+                      width={408}
+                      height={254}
+                    />
                   </div>
                 </div>
               </div>
