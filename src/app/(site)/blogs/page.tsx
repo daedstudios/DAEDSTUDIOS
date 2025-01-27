@@ -16,11 +16,7 @@ const Blog = () => {
   return (
     <>
       <div className="flex w-full flex-wrap items-end justify-between border-y-[0.5px] border-dark-5">
-
         <div className="mx-1 mt-48 flex min-w-[320px] pl-4 md:mt-48 lg:mt-64">
-
-
-  
           <SectionTitle
             paragraph=""
             subtitle=""
@@ -28,7 +24,7 @@ const Blog = () => {
             width="640px"
           />
         </div>
-        <p className="mb-4 ml-5 mr-8 font-mono text-base font-medium text-black dark:text-white sm:text-left sm:text-lg sm:leading-[1.44] lg:lg:max-w-[50%]">
+        <p className="mb-4 ml-5 mr-8 font-mono text-base font-medium text-black dark:text-white sm:text-left  sm:leading-[1.44] lg:lg:max-w-[50%]">
           AE Studios exists to transform ambitious ideas into reality. By
           prioritizing strategic thinking and modern design, we build impactful
           tools that connect brands with their audiences. Every line of code and
