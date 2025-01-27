@@ -31,7 +31,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
             {title}
           </Link> */}
         </h3>
-        <p className="mx-1 font-mono text-base font-medium text-dark-4 dark:text-dark-6">
+        <p className="mx-1 font-mono text-base text-dark-4 dark:text-dark-6">
           {excerpt}
         </p>
       </div>

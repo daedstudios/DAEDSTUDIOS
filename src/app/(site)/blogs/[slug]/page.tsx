@@ -82,7 +82,7 @@ export default async function Post({ params }: Props) {
 
   return (
     <>
-      <Breadcrumb pageName="PROJECT CASE STUDY" />
+      <Breadcrumb pageName="CASE STUDY" />
 
       <section className="pb-10 pt-20 dark:bg-black lg:pb-20 lg:pt-[0px]">
         <div className="">
@@ -99,34 +99,43 @@ export default async function Post({ params }: Props) {
                   height={500}
                   className="h-full w-full object-cover object-center px-4"
                 />
-                <div className="absolute left-5 top-0 z-10 flex h-full w-full items-end">
-                  <div className="flex flex-wrap items-center pb-0 pl-0 sm:p-0">
-                    <div className="mb-1 mr-5 flex max-w-4 items-center md:mr-10">
-                      {/* <div className="mr-4 h-10 w-10 overflow-hidden rounded-full">
-                        <Image
-                          src={post.authorImage}
-                          alt="image"
-                          className="w-full"
-                          width={40}
-                          height={40}
-                        />
-                      </div> */}
-                      <p className="text-base font-medium text-white">
-                        CLIENT{" "}
-                        <Link
-                          href="/#"
-                          className="font-mono text-white hover:opacity-70"
-                        >
-                          {post.author}
-                        </Link>
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </div>
 
               <div className="mx-1 flex flex-wrap border-t-[0.5px] border-dark-5 px-5">
-                <div className="w-full  lg:w-8/12">
+                <div className=" w-full lg:w-8/12">
+                  <div className="items-top mb-12 ">
+                    <p className=" pt-5 text-3xl font-normal  text-white">
+                      CASE STUDY
+                    </p>
+                  </div>
+                  <div className="mr-20 flex w-full  flex-wrap  gap-12 pb-10 lg:pr-5">
+                    <div className="items-top mb-1 flex max-w-36">
+                      <p className="text-base font-medium text-white">
+                        CLIENT{" "}
+                        <p className="font-mono text-base font-medium text-white">
+                          {post.author}
+                        </p>
+                      </p>
+                    </div>
+
+                    <div className="items-top mb-1 flex max-w-36">
+                      <p className="text-base font-medium text-white">
+                        INDUSTRY{" "}
+                        <p className="font-mono text-base font-medium text-white">
+                          {post.author}
+                        </p>
+                      </p>
+                    </div>
+                    <div className="items-top mb-1 flex max-w-36">
+                      <p className="text-base font-medium text-white">
+                        DELIVERABLES{" "}
+                        <p className="font-mono text-base font-medium text-white">
+                          {post.author}
+                        </p>
+                      </p>
+                    </div>
+                  </div>
+
                   <div className="blog-details  py-3 font-mono">
                     <div dangerouslySetInnerHTML={{ __html: content }}></div>
                   </div>
