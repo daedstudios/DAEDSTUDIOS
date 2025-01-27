@@ -21,43 +21,45 @@ const Hero = () => {
             </div>
             <ul className="items-left justify-left flex h-[4rem] flex-wrap px-4">
               <li className="w-80">
-                <MyFancyButton
-                  mainContent="contact us"
-                  slideUpContent="contact us"
-                  className="border-r-[0.5px] border-dark-5"
-                >
-                  <svg
-                    width="25"
-                    height="25"
-                    viewBox="0 0 25 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                <Link href={"/contact"}>
+                  <MyFancyButton
+                    mainContent="contact us"
+                    slideUpContent="contact us"
+                    className="border-r-[0.5px] border-dark-5"
                   >
-                    <mask
-                      id="mask0_64_89"
-                      style={{ maskType: "alpha" }}
-                      maskUnits="userSpaceOnUse"
-                      x="0"
-                      y="0"
+                    <svg
                       width="25"
                       height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <rect
-                        x="0.5"
-                        y="0.5"
-                        width="24"
-                        height="24"
-                        fill="#D9D9D9"
-                      />
-                    </mask>
-                    <g mask="url(#mask0_64_89)">
-                      <path
-                        d="M6.9 18.5L5.5 17.1L15.1 7.5H6.5V5.5H18.5V17.5H16.5V8.9L6.9 18.5Z"
-                        className="fill-black dark:fill-white"
-                      />
-                    </g>
-                  </svg>
-                </MyFancyButton>
+                      <mask
+                        id="mask0_64_89"
+                        style={{ maskType: "alpha" }}
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="25"
+                        height="25"
+                      >
+                        <rect
+                          x="0.5"
+                          y="0.5"
+                          width="24"
+                          height="24"
+                          fill="#D9D9D9"
+                        />
+                      </mask>
+                      <g mask="url(#mask0_64_89)">
+                        <path
+                          d="M6.9 18.5L5.5 17.1L15.1 7.5H6.5V5.5H18.5V17.5H16.5V8.9L6.9 18.5Z"
+                          className="fill-black dark:fill-white"
+                        />
+                      </g>
+                    </svg>
+                  </MyFancyButton>
+                </Link>
               </li>
               {/* <li className="w-80">
                 <MyFancyButton

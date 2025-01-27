@@ -157,7 +157,7 @@ export default async function Post({ params }: Props) {
                     </div>
 
                     <Image
-                      src="/images/blog/oet.svg"
+                      src={post.coverImage}
                       alt="image"
                       className="w-full translate-x-1 scale-[1.03] object-cover object-center"
                       width={408}
