@@ -17,8 +17,9 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "Free and Open-Source",
-    paragraph: "lorem ipsum is simply dummy text of the printing and industry.",
+    title: "WE DESIGN",
+    paragraph:
+      "We craft solutions driven by technical expertise and creativity, ensuring they align perfectly with your business goals and user needs, resulting in impactful and elegant designs.",
     btn: "Learn More",
     btnLink: "/#",
   },
@@ -38,8 +39,9 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "Modern Design",
-    paragraph: "Lorem Ipsum is simply dummy text of the printing and industry.",
+    title: "WE BUILD",
+    paragraph:
+      "In a world full of No-Coders we develop robust, scalable platforms tailored to your vision, leveraging cutting-edge technology to overcome constraints and deliver exceptional results.",
     btn: "Learn More",
     btnLink: "/#",
   },
@@ -91,8 +93,9 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "SaaS Starter Kit",
-    paragraph: "Lorem Ipsum is simply dummy text of the printing and industry.",
+    title: "WE TALK",
+    paragraph:
+      "We actively manage deployment, updates, and infrastructure, ensuring your platforms perform seamlessly and reliably while you focus on growth.",
     btn: "Learn More",
     btnLink: "/#",
   },
@@ -124,8 +127,9 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "All Essential Integrations",
-    paragraph: "Lorem Ipsum is simply dummy text of the printing and industry.",
+    title: "WE MAINTAIN",
+    paragraph:
+      "We engage in constant, transparent communication from discovery to delivery, ensuring that every step reflects your needs and exceeds your expectations.",
     btn: "Learn More",
     btnLink: "/#",
   },
