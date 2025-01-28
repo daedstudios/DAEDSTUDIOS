@@ -26,6 +26,11 @@ const ContactPage = () => {
         </p>
       </div>
 
+      <div className=" w-full px-4">
+        {" "}
+        <img src="/images/team/EliasAkshat.png" alt="" />{" "}
+      </div>
+
       <Contact />
     </>
   );
