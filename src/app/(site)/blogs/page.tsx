@@ -20,12 +20,12 @@ const Blog = () => {
           <SectionTitle
             paragraph=""
             subtitle=""
-            title="WE ARE AE STUDIOS"
+            title="WE ARE DAED STUDIOS"
             width="640px"
           />
         </div>
         <p className="mb-4 ml-5 mr-8 font-mono text-base font-medium text-black dark:text-white sm:text-left  sm:leading-[1.44] lg:lg:max-w-[50%]">
-          AE Studios exists to transform ambitious ideas into reality. By
+          DAED Studios exists to transform ambitious ideas into reality. By
           prioritizing strategic thinking and modern design, we build impactful
           tools that connect brands with their audiences. Every line of code and
           every pixel serves a purpose.
@@ -35,7 +35,7 @@ const Blog = () => {
 
       <section className="pb-10 pt-20 lg:pb-20 lg:pt-[120px]">
         <div className="">
-          <div className=" flex flex-wrap justify-center">
+          <div className=" justify-left flex flex-wrap">
             {posts.map((blog, i) => (
               <div key={i} className="w-full px-4 md:w-2/3 lg:w-1/2 xl:w-1/3">
                 <SingleBlog blog={blog} />
