@@ -25,7 +25,7 @@ const Blog = () => {
           />
         </div>
         <p className="mb-4 ml-5 mr-8 font-mono text-base font-medium text-black dark:text-white sm:text-left  sm:leading-[1.44] lg:lg:max-w-[50%]">
-          DAED Studios exists to transform ambitious ideas into reality. By
+          DAED STUDIOS exists to transform ambitious ideas into reality. By
           prioritizing strategic thinking and modern design, we build impactful
           tools that connect brands with their audiences. Every line of code and
           every pixel serves a purpose.
