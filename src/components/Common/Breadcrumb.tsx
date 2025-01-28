@@ -32,12 +32,12 @@ const Breadcrumb = ({
                     </Link>
                   </li>
                   <li>
-                    <p className="flex items-center gap-[10px] text-base font-medium text-body-color">
-                      <span className="text-body-color dark:text-dark-6">
+                    <p className="flex items-center gap-[10px] font-mono text-base font-normal  text-body-color">
+                      <span className=" text-body-color dark:text-dark-6">
                         {" "}
                         /{" "}
                       </span>
-                      {pageName}
+                      projects
                     </p>
                   </li>
                 </ul>
