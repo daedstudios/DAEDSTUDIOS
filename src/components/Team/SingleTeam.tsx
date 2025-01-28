@@ -6,14 +6,14 @@ const SingleTeam = ({ team }: { team: TeamType }) => {
     team;
   return (
     <div className="w-full px-8 lg:w-1/2 xl:w-1/2">
-      <div className="relative z-10  mb-5 h-[40rem]">
-        <h1 className="absolute bottom-1 z-20 mx-4 mt-4 font-mono text-2xl text-black dark:text-white">
+      <div className="relative z-10  mb-5">
+        <img src={image} alt="" />
+        <h1 className=" z-20 mx-0 mt-4 font-mono text-2xl text-black dark:text-white">
           {name}
         </h1>
-        <h1 className="absolute bottom-1 right-1 z-20 mx-4 mt-4 font-mono text-2xl text-hover dark:text-hover">
+        <h1 className="bottom-1 right-1 z-20 mx-0 mt-4 font-mono text-2xl text-hover dark:text-hover">
           {designation}
         </h1>
-        <img src={image} alt="" />
 
         <div className="items-left flex justify-center gap-5">
           <a
