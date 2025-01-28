@@ -12,8 +12,8 @@ const Hero = () => {
         <div className="items-left flex flex-wrap  ">
           <div className="w-full">
             <div className="row-auto flex flex-wrap items-end justify-between border-b-[0.5px] border-dark-5  pl-4">
-              <h1 className=" mx-1 max-w-[610px] text-8xl leading-snug dark:text-white sm:leading-snug lg:text-9xl lg:leading-[1.2]">
-                WE ARE AE STUDIOS
+              <h1 className=" mx-1 max-w-[650px] text-8xl leading-snug dark:text-white sm:leading-snug lg:text-9xl lg:leading-[1.2]">
+                WE ARE DAED STUDIOS
               </h1>
               <p className=" mb-3 ml-5 mr-8 hidden w-[345px] items-start font-mono text-base font-medium text-black dark:text-white sm:text-left lg:flex">
                 the place where creativity meets cutting edge tech.
