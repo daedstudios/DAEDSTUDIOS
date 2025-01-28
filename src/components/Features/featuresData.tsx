@@ -21,7 +21,7 @@ const featuresData: Feature[] = [
     paragraph:
       "We craft solutions driven by technical expertise and creativity, ensuring they align perfectly with your business goals and user needs, resulting in impactful and elegant designs.",
     btn: "Learn More",
-    btnLink: "/#",
+    btnLink: "/about",
   },
   {
     id: 2,
@@ -43,7 +43,7 @@ const featuresData: Feature[] = [
     paragraph:
       "In a world full of No-Coders we develop robust, scalable platforms tailored to your vision, leveraging cutting-edge technology to overcome constraints and deliver exceptional results.",
     btn: "Learn More",
-    btnLink: "/#",
+    btnLink: "/about",
   },
   {
     id: 3,
@@ -97,7 +97,7 @@ const featuresData: Feature[] = [
     paragraph:
       "We actively manage deployment, updates, and infrastructure, ensuring your platforms perform seamlessly and reliably while you focus on growth.",
     btn: "Learn More",
-    btnLink: "/#",
+    btnLink: "/about",
   },
   {
     id: 4,
@@ -131,7 +131,7 @@ const featuresData: Feature[] = [
     paragraph:
       "We engage in constant, transparent communication from discovery to delivery, ensuring that every step reflects your needs and exceeds your expectations.",
     btn: "Learn More",
-    btnLink: "/#",
+    btnLink: "/about",
   },
 ];
 export default featuresData;
