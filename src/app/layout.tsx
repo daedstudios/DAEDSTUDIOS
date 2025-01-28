@@ -60,7 +60,7 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className="max-w-screen overflow-x-hidden bg-white dark:bg-black">
+      <body className="max-w-screen overflow-x-hidden bg-white text-black dark:bg-black dark:text-white">
         {loading ? (
           <PreLoader />
         ) : (
