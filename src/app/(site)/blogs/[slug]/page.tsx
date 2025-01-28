@@ -82,7 +82,7 @@ export default async function Post({ params }: Props) {
 
   return (
     <>
-      <Breadcrumb pageName="CASE STUDY" />
+      <Breadcrumb pageName={post.author} />
 
       <section className="pb-10 pt-20 dark:bg-black lg:pb-20 lg:pt-[0px]">
         <div className="">
@@ -104,33 +104,33 @@ export default async function Post({ params }: Props) {
               <div className="mx-1 flex flex-wrap border-t-[0.5px] border-dark-5 px-5">
                 <div className=" w-full lg:w-8/12">
                   <div className="items-top mb-12 ">
-                    <p className=" pt-5 text-3xl font-normal  text-white">
+                    <p className=" pt-5 text-3xl font-normal  dark:text-white">
                       CASE STUDY
                     </p>
                   </div>
                   <div className="mr-20 flex w-full  flex-wrap  gap-12 pb-10 lg:pr-5">
                     <div className="items-top mb-1 flex max-w-36">
-                      <p className="text-base font-medium text-white">
+                      <p className="text-base font-medium dark:text-white">
                         CLIENT{" "}
-                        <p className="font-mono text-base font-medium text-white">
+                        <p className="font-mono text-base font-medium dark:text-white">
                           {post.author}
                         </p>
                       </p>
                     </div>
 
                     <div className="items-top mb-1 flex max-w-36">
-                      <p className="text-base font-medium text-white">
+                      <p className="text-base font-medium dark:text-white">
                         INDUSTRY{" "}
-                        <p className="font-mono text-base font-medium text-white">
+                        <p className="font-mono text-base font-medium dark:text-white">
                           {post.author}
                         </p>
                       </p>
                     </div>
                     <div className="items-top mb-1 flex max-w-36">
-                      <p className="text-base font-medium text-white">
+                      <p className="text-base font-medium dark:text-white">
                         DELIVERABLES{" "}
-                        <p className="font-mono text-base font-medium text-white">
-                          {post.author}
+                        <p className="font-mono text-base font-medium dark:text-white">
+                          {post.date}
                         </p>
                       </p>
                     </div>
@@ -143,7 +143,7 @@ export default async function Post({ params }: Props) {
                 <div className="w-full  border-dark-5 px-0 lg:w-4/12 lg:border-l-[0.5px]">
                   <div>
                     <div className="mb-8 ml-0 flex flex-wrap">
-                      <div className="w-full px-1">
+                      <div className=" w-full px-1">
                         <h2
                           className="wow fadeInUp relative pt-5 text-2xl font-normal text-dark dark:text-white sm:text-[28px]"
                           data-wow-delay=".1s"
@@ -159,19 +159,19 @@ export default async function Post({ params }: Props) {
                           <PopularArticle
                             key={i}
                             image={blog?.coverImage}
-                            title={blog?.title.slice(0, 30)}
+                            title={blog?.title}
                             name={blog?.author}
                           />
                         ))}
                     </div>
 
-                    <Image
+                    {/* <Image
                       src={post.coverImage}
                       alt="image"
                       className="w-full translate-x-1 scale-[1.03] object-cover object-center"
                       width={408}
                       height={254}
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>
