@@ -12,6 +12,7 @@ import { useEffect, useState } from "react";
 import PreLoader from "@/components/Common/PreLoader";
 import localFont from "next/font/local";
 import { TransitionProvider } from "./TransitionProvider";
+import Script from "next/script";
 
 const customFont = localFont({
   src: [
@@ -54,11 +55,25 @@ export default function RootLayout({
       className={`${customFont.variable} ${customFont2.variable} font-sans`}
       lang="en"
     >
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
+      <head>
+        {/* Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-MMDTW7D83X"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-MMDTW7D83X');
+            `,
+          }}
+        />
+      </head>
 
       <body className="max-w-screen overflow-x-hidden bg-white text-black dark:bg-black dark:text-white">
         {loading ? (
