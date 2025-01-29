@@ -16,7 +16,7 @@ const ContactPage = () => {
           <SectionTitle
             paragraph=""
             subtitle=""
-            title="WE ARE AE STUDIOS"
+            title="WE ARE DAED STUDIOS"
             width="640px"
           />
         </div>
