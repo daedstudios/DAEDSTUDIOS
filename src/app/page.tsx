@@ -14,8 +14,8 @@ import { getAllPosts } from "@/utils/markdown";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AE STUDIOS",
-  description: "Web- and Software Design and Development",
+  title: "DAED STUDIOS",
+  description: "Creative Studio for Software, Design and Web Development",
 };
 
 export default function Home() {
