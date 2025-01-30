@@ -6,8 +6,8 @@ import SectionTitle from "@/components/Common/SectionTitle";
 import Contact from "@/components/Contact";
 
 export const metadata: Metadata = {
-  title: "Blog Grids | Play SaaS Starter Kit and Boilerplate for Next.js",
-  description: "Blog grids page description",
+  title: "Projects | DAED STUDIOS Selection of Works",
+  description: "Projects",
 };
 
 const Blog = () => {

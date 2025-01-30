@@ -4,8 +4,8 @@ import { Metadata } from "next";
 import SectionTitle from "@/components/Common/SectionTitle";
 
 export const metadata: Metadata = {
-  title: "Contact Page | Play SaaS Starter Kit and Boilerplate for Next.js",
-  description: "This is contact page description",
+  title: "Contact | DAED STUDIOS Contact Us",
+  description: "Contact Us",
 };
 
 const ContactPage = () => {
