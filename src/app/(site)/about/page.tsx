@@ -4,6 +4,7 @@ import Team from "@/components/Team";
 import { Metadata } from "next";
 import SectionTitle from "@/components/Common/SectionTitle";
 import Contact from "@/components/Contact";
+import Services from "@/components/Services";
 
 export const metadata: Metadata = {
   title: "about",
@@ -32,6 +33,7 @@ const AboutPage = () => {
       {/* <Breadcrumb pageName="About Us Page" /> */}
       {/* <About /> */}
       <Team />
+      <Services />
       <Contact />
     </main>
   );

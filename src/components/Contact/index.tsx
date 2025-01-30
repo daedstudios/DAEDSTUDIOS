@@ -35,10 +35,7 @@ const Contact = () => {
                       LET US HELP
                     </h3>
                     <p className="font-mono text-base text-body-color dark:text-dark-6">
-                      Elias.aestudio@gmail.com
-                    </p>
-                    <p className="mt-1 font-mono text-base text-body-color dark:text-dark-6">
-                      Akshat.aestudio@gmail.com
+                      daedstudios@gmail.com
                     </p>
                   </div>
                 </div>
