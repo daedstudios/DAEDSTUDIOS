@@ -7,6 +7,7 @@ import Contact from "@/components/Contact";
 import Faq from "@/components/Faq";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
+import Services from "@/components/Services";
 import Pricing from "@/components/Pricing";
 import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
@@ -26,11 +27,12 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <HomeBlogSection posts={posts} />
-      <div className="px-4">
-        <img src="/images/team/AkshatElias2.png" alt="" />
-      </div>
+
       <Features />
-      {/* <About /> */}
+      {/* <div className="px-4">
+        <img src="/images/team/AkshatElias2.png" alt="" />
+      </div> */}
+      {/* <Services /> */}
       {/* <CallToAction /> */}
       {/* <Pricing /> */}
       {/* <Team /> */}

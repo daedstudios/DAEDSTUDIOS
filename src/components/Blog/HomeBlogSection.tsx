@@ -32,7 +32,7 @@ const HomeBlogSection = ({ posts }: any) => {
             engaging brands.
           </p>
         </div>
-        <div className="mb-[9rem] mt-[3rem] flex flex-wrap">
+        <div className="mb-[3rem] mt-[3rem] flex flex-wrap">
           {posts.slice(0, 3).map((blog: any, i: number) => (
             <div key={i} className="w-full px-4 md:w-1/2 lg:w-1/3">
               <SingleBlog blog={blog} />

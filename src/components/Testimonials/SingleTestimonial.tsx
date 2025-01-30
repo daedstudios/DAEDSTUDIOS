@@ -30,14 +30,14 @@ const SingleTestimonial = ({
     `}
     >
       <div
-        className="rounded-xl bg-white px-4 py-[30px] dark:bg-black sm:px-[30px]"
+        className="rounded-xl bg-white py-[3rem] pl-5 pr-8 dark:bg-black"
         data-wow-delay=".1s"
       >
         <div className="mb-[18px] flex items-center gap-[2px]">
           {ratingIcons}
         </div>
 
-        <p className="mb-6 ml-1 font-mono text-base text-dark-4 dark:text-dark-6">
+        <p className="mb-6 ml-0 font-mono text-base text-dark-4 dark:text-dark-6">
           {content}
         </p>
 
