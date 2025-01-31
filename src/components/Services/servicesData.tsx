@@ -25,7 +25,7 @@ const servicesData = [
       "Collateral Design",
     ],
     btn: "See Work",
-    btnLink: "/blog",
+    btnLink: "/blogs",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const servicesData = [
       "",
     ],
     btn: "See Projects",
-    btnLink: "/blog",
+    btnLink: "/blogs",
   },
   {
     id: 4,
