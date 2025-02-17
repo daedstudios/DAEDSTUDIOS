@@ -6,28 +6,19 @@ const testimonialData: Testimonial[] = [
   {
     id: 1,
     name: "Sabo Masties",
-    designation: "Founder @ Rolex",
+    designation: "Creative Director @ rouge amsterdam",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "We loved working with DAED studios, they were precise and easy to work with. What convinced us was their experience in our industry, which other agencies were lacking in early conversations. We especially loved how they had already an existing system for event ticket selling, that saved us a lot of money and time for our project. All in all great work, will definetly work with them again!",
     image: "/images/testimonials/author-01.png",
     star: 5,
   },
   {
     id: 2,
     name: "Margin Gesmu",
-    designation: "Founder @ UI Hunter",
+    designation: "Founder @ Planted",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "Best experience with an agency so far. We initially tried developing our e-commerce site for Planted ourselves using no-code and shopify and ended up just dealing with really slow loading times. We are really grateful for how it turned out and excited to see when it goes live. Thanks!",
     image: "/images/testimonials/author-02.png",
-    star: 5,
-  },
-  {
-    id: 3,
-    name: "William Smith",
-    designation: "Founder @ Trorex",
-    content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/author-03.png",
     star: 5,
   },
 ];

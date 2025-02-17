@@ -41,19 +41,15 @@ const SingleTestimonial = ({
           {content}
         </p>
 
-        <div className="ml-1 flex items-center gap-4">
-          <div className="h-[50px] w-[50px] overflow-hidden rounded-full">
+        {/* <div className="h-[50px] w-[50px] overflow-hidden rounded-full">
             <Image src={image} alt={name} width={50} height={50} />
-          </div>
+          </div> */}
 
-          <div>
-            <h3 className="font-mono text-sm font-normal text-dark dark:text-white">
-              {name}
-            </h3>
-            <p className="text-body-secondary font-mono text-xs">
-              {designation}
-            </p>
-          </div>
+        <div>
+          <h3 className="font-mono text-sm font-normal text-dark dark:text-white">
+            {name}
+          </h3>
+          <p className="text-body-secondary font-mono text-xs">{designation}</p>
         </div>
       </div>
     </div>
