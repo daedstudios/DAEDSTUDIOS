@@ -3,7 +3,6 @@ import React, { FormEventHandler, useEffect } from "react";
 import MyFancyButton from "../MyFancyButton/MyFancyButton";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import Email from "next-auth/providers/email";
 gsap.registerPlugin(useGSAP);
 
 const MyFancyForm = () => {
@@ -17,10 +16,26 @@ const MyFancyForm = () => {
 
   const submittedRef = React.useRef(null);
 
-  const handleSubmission = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmission = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (info.email === "") return;
     console.log(info);
+    try {
+      const response = await fetch("/api/formquery", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(info),
+      });
+
+      console.log("response:", response);
+      if (!response.ok) {
+        throw new Error("Failed to submit form");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
     gsap.to(submittedRef.current, {
       duration: 1,
       height: "100%",
