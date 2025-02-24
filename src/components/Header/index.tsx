@@ -105,10 +105,10 @@ const Header = () => {
             contact
           </Link>
           <Link
-            href="/blogs"
-            onClick={(e) => pathUrl === "/blogs" && e.preventDefault()}
+            href="/projects"
+            onClick={(e) => pathUrl === "/projects" && e.preventDefault()}
             className={`hidden md:block ${
-              pathUrl === "/blogs" ? "text-hover" : "hover:text-hover"
+              pathUrl === "/projects" ? "text-hover" : "hover:text-hover"
             }`}
           >
             projects

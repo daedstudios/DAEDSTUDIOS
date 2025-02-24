@@ -9,7 +9,11 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
   return (
     <div className="wow fadeInUp group mb-10" data-wow-delay=".1s">
       <div className="mb-8 overflow-hidden">
-        <Link href={`/blogs/${slug}`} aria-label="blog cover" className="block">
+        <Link
+          href={`/projects/${slug}`}
+          aria-label="blog cover"
+          className="block"
+        >
           <Image
             src={coverImage!}
             alt="image"
@@ -25,7 +29,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
         </span> */}
         <h3>
           {/* <Link
-            href={`/blogs/${slug}`}
+            href={`/projects/${slug}`}
             className="mb-4 inline-block text-xl font-normal text-dark hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
           >
             {title}

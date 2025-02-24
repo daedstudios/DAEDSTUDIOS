@@ -79,7 +79,7 @@ const Menu = () => {
           { href: "/", text: "home" },
           { href: "/about", text: "about" },
           { href: "/contact", text: "contact" },
-          { href: "/blogs", text: "projects" },
+          { href: "/projects", text: "projects" },
         ].map(({ href, text }) => (
           <Link
             key={href}
