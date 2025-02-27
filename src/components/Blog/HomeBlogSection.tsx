@@ -2,6 +2,11 @@ import SectionTitle from "../Common/SectionTitle";
 import SingleBlog from "./SingleBlog";
 
 const HomeBlogSection = ({ posts }: any) => {
+  const featuredPosts = [
+    posts.find((blog: any) => blog.slug === "rec"), // Your project
+    posts.find((blog: any) => blog.slug === "rouge"),
+    posts.find((blog: any) => blog.slug === "narastay"),
+  ].filter(Boolean); // Remove any undefined values
   return (
     <section className="border-b-[0.5px]  border-dark-5  bg-white dark:bg-black">
       <div className="mx-auto">
@@ -33,9 +38,14 @@ const HomeBlogSection = ({ posts }: any) => {
           </p>
         </div>
         <div className="mb-[3rem] mt-[3rem] flex flex-wrap">
-          {posts.slice(0, 3).map((blog: any, i: number) => (
+          {/* {posts.slice(0, 3).map((blog: any, i: number) => (
             <div key={i} className="w-full px-4 md:w-1/2 lg:w-1/3">
               <SingleBlog blog={blog} />
+            </div>
+          ))} */}
+          {featuredPosts.map((post) => (
+            <div key={post.slug} className="w-full px-4 md:w-1/2 lg:w-1/3">
+              <SingleBlog blog={post} />
             </div>
           ))}
         </div>

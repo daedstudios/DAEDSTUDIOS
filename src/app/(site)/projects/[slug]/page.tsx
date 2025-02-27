@@ -8,6 +8,7 @@ import { format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Link2 } from "lucide-react";
 
 type Props = {
   params: { slug: string };
@@ -85,6 +86,7 @@ export default async function Post({ params }: Props) {
     "deliverables",
     "industry",
     "client",
+    "link",
   ]);
 
   const content = await markdownToHtml(post.content || "");
@@ -164,6 +166,20 @@ export default async function Post({ params }: Props) {
                           ))}
                       </div>
 
+                      {post.link && (
+                        <Link
+                          href={post.link}
+                          className=" flex flex-row items-center gap-4"
+                          target="_blank"
+                        >
+                          <div className="pl-1 font-sans text-[2rem] text-hover">
+                            LIVE SITE
+                          </div>
+                          <div className="rotate-45 transform hover:rotate-90">
+                            <Link2 className="stroke-hover" size={30} />
+                          </div>
+                        </Link>
+                      )}
                       {/* <Image
                       src={post.coverImage}
                       alt="image"
