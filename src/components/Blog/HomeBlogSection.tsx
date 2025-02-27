@@ -44,8 +44,8 @@ const HomeBlogSection = ({ posts }: any) => {
             </div>
           ))} */}
           {featuredPosts.map((post) => (
-            <div className="w-full px-4 md:w-1/2 lg:w-1/3">
-              <SingleBlog key={post.slug} blog={post} />
+            <div key={post.slug} className="w-full px-4 md:w-1/2 lg:w-1/3">
+              <SingleBlog blog={post} />
             </div>
           ))}
         </div>
