@@ -14,27 +14,36 @@ const Contact = () => {
               <div className="ud-contact-title mb-12 lg:mb-[150px]">
                 <p className="py-4 font-mono">.contact</p>
                 <h2 className="max-w-[260px] text-[35px] font-normal leading-[1.14] text-dark dark:text-white">
-                  LET&#39;S TALK ABOUT YOUR PROBLEM
+                  LET&#39;S TALK ABOUT YOUR PROJECT
                 </h2>
               </div>
               <div className="mb-12 flex flex-wrap justify-between lg:mb-0">
                 <div className="mb-8 flex w-[330px] max-w-full">
                   <div>
                     <h3 className="mb-[18px] text-lg text-dark dark:text-white">
-                      OUR LOCATION
+                      IMPRESSUM
                     </h3>
                     <p className="font-mono text-base text-body-color dark:text-dark-6">
+                      DAED Studios
+                    </p>
+                    <p className="font-mono text-base text-body-color dark:text-dark-6">
                       Kirchenplatz 1, 94032 Passau, Germany
+                    </p>
+                    <p className="font-mono text-base text-body-color dark:text-dark-6">
+                      Verantwortlich gemäß §5 TMG: Elias Heininger
                     </p>
                   </div>
                 </div>
                 <div className="mb-8 flex w-[330px] max-w-full">
                   <div>
                     <h3 className="mb-[18px] text-lg font-normal text-dark dark:text-white">
-                      LET US HELP
+                      CONTACT US
                     </h3>
                     <p className="font-mono text-base text-body-color dark:text-dark-6">
-                      daedstudios@gmail.com
+                      elias@daedstudios@.com
+                    </p>
+                    <p className="font-mono text-base text-body-color dark:text-dark-6">
+                      whatsapp: 0170 1614 089
                     </p>
                   </div>
                 </div>

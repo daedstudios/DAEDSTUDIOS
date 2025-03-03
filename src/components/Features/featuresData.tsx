@@ -41,7 +41,7 @@ const featuresData: Feature[] = [
     ),
     title: "WE BUILD",
     paragraph:
-      "In a world full of No-Coders we develop robust, scalable platforms tailored to your vision, leveraging cutting-edge technology to overcome constraints and deliver exceptional results.",
+      "In a world full of No-Coders we develop robust, scalable NextJs Web-Apps tailored to your vision, leveraging cutting-edge technology to overcome constraints and deliver exceptional results.",
     btn: "Learn More",
     btnLink: "/about",
   },
@@ -93,9 +93,9 @@ const featuresData: Feature[] = [
         />
       </svg>
     ),
-    title: "WE TALK",
+    title: "WE COMMUNICATE",
     paragraph:
-      "We actively manage deployment, updates, and infrastructure, ensuring your platforms perform seamlessly and reliably while you focus on growth.",
+      "We engage in constant, transparent communication from discovery to delivery, ensuring that every step reflects your needs and exceeds your expectations.",
     btn: "Learn More",
     btnLink: "/about",
   },
@@ -129,7 +129,7 @@ const featuresData: Feature[] = [
     ),
     title: "WE MAINTAIN",
     paragraph:
-      "We engage in constant, transparent communication from discovery to delivery, ensuring that every step reflects your needs and exceeds your expectations.",
+      "We actively manage deployment, updates, and infrastructure, ensuring your platforms perform seamlessly and reliably while you focus on growth.",
     btn: "Learn More",
     btnLink: "/about",
   },

@@ -41,11 +41,11 @@ const Testimonials = () => {
         </div>
 
         <p className="lg-1/3 mb-4 ml-5 mr-8 font-mono text-base font-medium text-black dark:text-white sm:text-left  sm:leading-[1.44] lg:max-w-[50%] lg:overflow-hidden">
-          At AE STUDIOS, our success is defined by the impact we create for our
-          clients. From innovative SaaS solutions to seamless web experiences,
-          every project reflects our commitment to excellence. But dont just
-          take our word for it—heres what our clients have to say about working
-          with us.
+          At DAED STUDIOS, our success is defined by the impact we create for
+          our clients. From innovative SaaS solutions to seamless web
+          experiences, every project reflects our commitment to excellence. But
+          dont just take our word for it—heres what our clients have to say
+          about working with us.
         </p>
       </div>
       <div className="flex w-screen -translate-x-1 flex-wrap border-t-[0.5px] border-dark-5 py-[3rem]">
