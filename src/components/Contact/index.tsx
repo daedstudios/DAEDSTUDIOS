@@ -40,7 +40,7 @@ const Contact = () => {
                       CONTACT US
                     </h3>
                     <p className="font-mono text-base text-body-color dark:text-dark-6">
-                      elias@daedstudios@.com
+                      elias.daedstudios@.com
                     </p>
                     <p className="font-mono text-base text-body-color dark:text-dark-6">
                       whatsapp: 0170 1614 089
