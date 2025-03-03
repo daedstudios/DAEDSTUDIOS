@@ -21,8 +21,7 @@ const ContactPage = () => {
           />
         </div>
         <p className="mb-4 ml-5 mr-8 font-mono text-base font-medium text-black dark:text-white sm:text-left  sm:leading-[1.44] lg:max-w-[50%]">
-          Crafting solid Web- and Software-Solutions designed to build engaging
-          brands.
+          Crafting custom websolutions designed to build engaging brands.
         </p>
       </div>
 

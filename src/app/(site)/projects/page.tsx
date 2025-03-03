@@ -25,7 +25,7 @@ const Blog = () => {
           />
         </div>
         <p className="lg:m-w-[50%] mb-4 ml-5 mr-8 font-mono text-base font-medium text-black dark:text-white sm:text-left sm:leading-[1.44]">
-          A Selection of our Client work and projects.
+          A selection of our client work and projects.
         </p>
       </div>
       {/* <Breadcrumb pageName="Blog Grids" /> */}
