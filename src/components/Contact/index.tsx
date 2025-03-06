@@ -24,7 +24,7 @@ const Contact = () => {
                       IMPRESSUM
                     </h3>
                     <p className="font-mono text-base text-body-color dark:text-dark-6">
-                      DAED Studios
+                      daed studios
                     </p>
                     <p className="font-mono text-base text-body-color dark:text-dark-6">
                       Kirchenplatz 1, 94032 Passau, Germany
@@ -40,10 +40,10 @@ const Contact = () => {
                       CONTACT US
                     </h3>
                     <p className="font-mono text-base text-body-color dark:text-dark-6">
-                      elias.daedstudios@.com
+                      daedstudios@gmail.com
                     </p>
                     <p className="font-mono text-base text-body-color dark:text-dark-6">
-                      whatsapp: 0170 1614 089
+                      whatsapp: 0170 1614 089 or +66 98 654 7436
                     </p>
                   </div>
                 </div>
