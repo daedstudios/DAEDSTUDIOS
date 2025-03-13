@@ -5,7 +5,7 @@ const HomeBlogSection = ({ posts }: any) => {
   const featuredPosts = [
     posts.find((blog: any) => blog.slug === "rec"), // Your project
     posts.find((blog: any) => blog.slug === "rouge"),
-    posts.find((blog: any) => blog.slug === "narastay"),
+    posts.find((blog: any) => blog.slug === "altarchitecture"),
   ].filter(Boolean); // Remove any undefined values
   return (
     <section className="border-b-[0.5px]  border-dark-5  bg-white dark:bg-black">
