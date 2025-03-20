@@ -3,7 +3,7 @@ import SingleBlog from "./SingleBlog";
 
 const HomeBlogSection = ({ posts }: any) => {
   const featuredPosts = [
-    posts.find((blog: any) => blog.slug === "rec"), // Your project
+    posts.find((blog: any) => blog.slug === "billly"), // Your project
     posts.find((blog: any) => blog.slug === "rouge"),
     posts.find((blog: any) => blog.slug === "altarchitecture"),
   ].filter(Boolean); // Remove any undefined values
