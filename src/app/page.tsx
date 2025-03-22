@@ -27,13 +27,9 @@ export default function Home() {
       <ScrollUp />
       <Hero />
       <HomeBlogSection posts={posts} />
-      <Services />
+
       <Features />
-      {/* <div className="px-4">
-        <img src="/images/team/AkshatElias2.png" alt="" />
-      </div> */}
-      {/* <Services /> */}
-      {/* <CallToAction /> */}
+      <Services />
       {/* <Pricing /> */}
       {/* <Team /> */}
 
