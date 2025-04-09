@@ -45,6 +45,7 @@ const NewServicesHover = () => {
           key={service.id}
           onMouseEnter={() => setHovered(service.id)}
           onMouseLeave={() => setHovered(-1)}
+          onClick={() => setHovered(service.id}
         >
           {service.text}
         </div>
