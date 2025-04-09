@@ -76,7 +76,7 @@ const Header = () => {
             </>
           </Link>
         </div>
-        <div className="flex items-center gap-8 space-x-0 font-mono">
+        <div className="flex items-center gap-4 space-x-0 font-mono">
           <Link
             href="/"
             onClick={(e) => pathUrl === "/" && e.preventDefault()}
@@ -96,6 +96,15 @@ const Header = () => {
             about
           </Link>
           <Link
+            href="/projects"
+            onClick={(e) => pathUrl === "/projects" && e.preventDefault()}
+            className={`hidden md:block ${
+              pathUrl === "/projects" ? "text-hover" : "hover:text-hover"
+            }`}
+          >
+            portfolio
+          </Link>
+          <Link
             href="/contact"
             onClick={(e) => pathUrl === "/contact" && e.preventDefault()}
             className={`hidden md:block ${
@@ -104,15 +113,7 @@ const Header = () => {
           >
             contact
           </Link>
-          <Link
-            href="/projects"
-            onClick={(e) => pathUrl === "/projects" && e.preventDefault()}
-            className={`hidden md:block ${
-              pathUrl === "/projects" ? "text-hover" : "hover:text-hover"
-            }`}
-          >
-            projects
-          </Link>
+
           <Menu />
           <button
             aria-label="theme toggler"
