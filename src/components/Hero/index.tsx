@@ -7,20 +7,17 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative overflow-hidden pt-[120px] dark:bg-primary md:pt-[130px] lg:pt-[160px]"
+        className="relative overflow-hidden pt-[10rem] dark:bg-primary lg:pt-[12rem]"
       >
-        <div className="items-left flex flex-wrap  ">
+        <div className="items-left flex flex-wrap">
           <div className="w-full">
-            <div className="row-auto flex flex-wrap items-end justify-between border-b-[0.5px] border-dark-5   pl-4">
-              <h1 className=" mx-1 max-w-[900px] text-8xl leading-snug  sm:leading-snug lg:text-9xl lg:leading-[1.2]">
-                DESIGN CONCEPTS BUILT FAST.
+            <div className="flex border-b-[0.5px] border-dark-5 px-4">
+              <h1 className=" mx-1 text-5xl md:text-7xl lg:text-9xl">
+                CREATIVE STUDIO FOR SOFTWARE SOLUTIONS
               </h1>
-              <p className=" mb-3 ml-5 mr-8 hidden w-[345px] items-start font-mono text-base font-medium text-black dark:text-white sm:text-left lg:flex">
-                a creative web- & software studio
-              </p>
             </div>
 
-            <ul className="items-left justify-left flex h-[4rem] flex-wrap px-4">
+            {/* <ul className="items-left justify-left flex h-[4rem] flex-wrap px-4">
               <li className="w-80">
                 <Link href={"/contact"}>
                   <MyFancyButton
@@ -62,7 +59,16 @@ const Hero = () => {
                   </MyFancyButton>
                 </Link>
               </li>
-            </ul>
+            </ul> */}
+            <div>
+              <video
+                src="/images/blog/DAEDSTUDIOS2.mov"
+                autoPlay
+                muted
+                loop
+                className="w-full px-4"
+              />
+            </div>
           </div>
         </div>
       </section>
