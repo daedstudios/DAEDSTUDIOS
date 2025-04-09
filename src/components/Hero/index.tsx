@@ -66,6 +66,7 @@ const Hero = () => {
                 autoPlay
                 muted
                 loop
+                playsInline
                 className="w-full px-4"
               />
             </div>
