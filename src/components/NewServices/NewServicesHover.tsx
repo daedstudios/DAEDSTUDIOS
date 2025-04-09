@@ -5,25 +5,25 @@ import React, { useEffect } from "react";
 const servicesData = [
   {
     id: 1,
-    text: "Web Development",
+    text: "WEB DEVELOPMENT",
     image: "/images/blog/article-author-01.png",
     link: "/services/web-development",
   },
   {
     id: 2,
-    text: "Mobile App Development",
+    text: "DATA VISUALIZATION",
     image: "/images/blog/article-author-02.png",
     link: "/services/mobile-app",
   },
   {
     id: 3,
-    text: "UI/UX Design",
+    text: "UI/UX DESIGN",
     image: "/images/blog/article-author-03.png",
     link: "/services/design",
   },
   {
     id: 4,
-    text: "Cloud Solutions",
+    text: "VISUAL DESIGN",
     image: "/images/blog/article-author-04.png",
     link: "/services/cloud",
   },
@@ -37,11 +37,11 @@ const NewServicesHover = () => {
   }, [hovered]);
 
   return (
-    <div className="relative px-4">
-      Services
+    <div className="relative gap-1 px-5 py-[8rem] font-mono">
+      services
       {servicesData.map((service) => (
         <div
-          className="w-auto border text-4xl md:text-5xl lg:text-7xl"
+          className="w-auto  cursor-pointer font-sans text-4xl text-gray-400 hover:text-primary dark:hover:text-white md:text-5xl lg:text-7xl"
           key={service.id}
           onMouseEnter={() => setHovered(service.id)}
           onMouseLeave={() => setHovered(-1)}
@@ -49,15 +49,14 @@ const NewServicesHover = () => {
           {service.text}
         </div>
       ))}
-      <div className="absolute right-4 top-4 h-32 w-32 lg:h-56 lg:w-56">
+      <div className="absolute right-32 top-4 h-64 w-64 lg:h-96 lg:w-96">
         {hovered !== -1 && (
           <Image
             src={servicesData[hovered - 1].image}
             alt="fvaefv"
             fill
-            // height={100}
-            // width={100}
             objectFit="cover"
+            className="animate-floatCircle transform"
           />
         )}
       </div>
