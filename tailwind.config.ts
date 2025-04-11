@@ -78,9 +78,17 @@ const config: Config = {
   				'100%': {
   					transform: 'translateX(-100%)'
   				}
-  			}
+  			},
+        floatCircle: {
+          "0%": { transform: "translate(0, 0)" },
+          "25%": { transform: "translate(45px, -45px)" },
+          "50%": { transform: "translate(0px, -45px)" },
+          "75%": { transform: "translate(-45px, -45px)" },
+          "100%": { transform: "translate(0, 0)" },
+        },
   		},
   		animation: {
+        floatCircle: "floatCircle 6s ease-in-out infinite",
   			slideLeftToRight: 'moveFromLeftToRight 9s linear infinite',
   			slideRightToLeft: 'moveFromRightToLeft 9s linear infinite'
   		},

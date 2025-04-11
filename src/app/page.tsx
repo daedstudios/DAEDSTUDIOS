@@ -14,6 +14,8 @@ import Testimonials from "@/components/Testimonials";
 import { getAllPosts } from "@/utils/markdown";
 import { Metadata } from "next";
 import { ProjectCarousel } from "@/components/ProjectCarousel/ProjectCarousel";
+import NewServicesHover from "@/components/NewServices/NewServicesHover";
+
 
 export const metadata: Metadata = {
   title: "DAED STUDIOS",
@@ -30,6 +32,7 @@ export default function Home() {
       <HomeBlogSection posts={posts} />
 
       <Features />
+      <NewServicesHover />
       <Services />
       <ProjectCarousel projects={posts} />
       {/* <Pricing /> */}
