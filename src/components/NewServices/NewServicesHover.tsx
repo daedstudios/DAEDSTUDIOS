@@ -6,25 +6,31 @@ const servicesData = [
   {
     id: 1,
     text: "WEB DEVELOPMENT",
-    image: "/images/blog/article-author-01.png",
+    image: "/images/blog/ALT.mov",
     link: "/services/web-development",
   },
   {
     id: 2,
     text: "DATA VISUALIZATION",
-    image: "/images/blog/article-author-02.png",
+    image: "/images/blog/net.mov",
     link: "/services/mobile-app",
   },
   {
     id: 3,
     text: "UI/UX DESIGN",
-    image: "/images/blog/article-author-03.png",
+    image: "/images/blog/phoneRecordRec.mov",
     link: "/services/design",
   },
   {
     id: 4,
     text: "VISUAL DESIGN",
-    image: "/images/blog/article-author-04.png",
+    image: "/images/blog/flower.mov",
+    link: "/services/cloud",
+  },
+  {
+    id: 5,
+    text: "MVP DEVELOPMENT",
+    image: "/images/blog/BilllyDemo.mov",
     link: "/services/cloud",
   },
 ];
@@ -49,14 +55,15 @@ const NewServicesHover = () => {
           {service.text}
         </div>
       ))}
-      <div className="absolute right-32 top-4 h-64 w-64 lg:h-96 lg:w-96">
+      <div className="absolute right-32  top-24 h-64 w-64  lg:h-[40rem] lg:w-[40rem]">
         {hovered !== -1 && (
-          <Image
+          <video
             src={servicesData[hovered - 1].image}
-            alt="fvaefv"
-            fill
-            objectFit="cover"
-            className="animate-floatCircle transform"
+            className="h-64 w-64 animate-floatCircle overflow-hidden rounded-[50%] object-cover shadow-2 shadow-gray-400  lg:h-[40rem] lg:w-[40rem] "
+            autoPlay
+            loop
+            muted
+            playsInline
           />
         )}
       </div>
